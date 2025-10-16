@@ -1,6 +1,6 @@
 # Android Open-Source Telematics App
 
-![](https://github.com/Mobile-Telematics/telematics-open-source-app-android/blob/master/img_readme/telematicsapp.jpeg)
+![](https://github.com/Mobile-Telematics/telematics-open-source-app-android/blob/main/img_readme/telematicsapp.jpeg)
 
 ## Description
 
@@ -39,34 +39,34 @@ console: https://console.firebase.google.com
 
 Click "Create a project" button.
 
-![](https://github.com/Mobile-Telematics/telematics-open-source-app-android/blob/master/img_readme/1.png)
+![](https://github.com/Mobile-Telematics/telematics-open-source-app-android/blob/main/img_readme/1.png)
 
 Step 2: Enter the name of your future Project. Click "Continue" button.
 
-![](https://github.com/Mobile-Telematics/telematics-open-source-app-android/blob/master/img_readme/2.png)
+![](https://github.com/Mobile-Telematics/telematics-open-source-app-android/blob/main/img_readme/2.png)
 
 Step 3: For ease of integration, at the next step, we recommend deactivating the "Enable Google
 Analytics" checkbox.
 
-![](https://github.com/Mobile-Telematics/telematics-open-source-app-android/blob/master/img_readme/3.png)
+![](https://github.com/Mobile-Telematics/telematics-open-source-app-android/blob/main/img_readme/3.png)
 
 Click "Create project".
 
 Step 4: Now you need to create a configuration for your Android app. Click on the "Android" as it us
 shown on the picture below:
-![](https://github.com/Mobile-Telematics/telematics-open-source-app-android/blob/master/img_readme/4.png)
+![](https://github.com/Mobile-Telematics/telematics-open-source-app-android/blob/main/img_readme/4.png)
 
 Step 5: Enter your Android Package Name. Enter the SHA-1 key, this identifier must be used in your
 application in Android Studio. Click "Register app" then.
-![](https://github.com/Mobile-Telematics/telematics-open-source-app-android/blob/master/img_readme/5.png)
+![](https://github.com/Mobile-Telematics/telematics-open-source-app-android/blob/main/img_readme/5.png)
 
 Step 6: To connect your Firebase you need to add the `google-services.json` file
 to `project_directory\app`. Final file path: `project_directory\app\google-services.json`
-![](https://github.com/Mobile-Telematics/telematics-open-source-app-android/blob/master/img_readme/6.png)
+![](https://github.com/Mobile-Telematics/telematics-open-source-app-android/blob/main/img_readme/6.png)
 
 Step 7: You can skip the "Add Firebase SDK" & "Add initialization code" steps below, because we
 already did it for you in our Telematics App:) Finish the setup and click on "Continue to console".
-![](https://github.com/Mobile-Telematics/telematics-open-source-app-android/blob/master/img_readme/7.png)
+![](https://github.com/Mobile-Telematics/telematics-open-source-app-android/blob/main/img_readme/7.png)
 
 Step 8: Open our TelematicsApp in Android Studio, make sure to transfer the `google-services.json`
 file to project_directory\app (See Step 5 above) and Enjoy!
@@ -137,11 +137,11 @@ Step 1: After sign in your Google account open https://console.cloud.google.com/
 Step 2: Create new project in Google Cloud
 Console: https://console.cloud.google.com/projectcreate </br>
 
-![](https://github.com/Mobile-Telematics/telematics-open-source-app-android/blob/master/img_readme/instruction_map_1.png)
+![](https://github.com/Mobile-Telematics/telematics-open-source-app-android/blob/main/img_readme/instruction_map_1.png)
 
-![](https://github.com/Mobile-Telematics/telematics-open-source-app-android/blob/master/img_readme/instruction_map_2.png)
+![](https://github.com/Mobile-Telematics/telematics-open-source-app-android/blob/main/img_readme/instruction_map_2.png)
 
-![](https://github.com/Mobile-Telematics/telematics-open-source-app-android/blob/master/img_readme/instruction_map_3.png)
+![](https://github.com/Mobile-Telematics/telematics-open-source-app-android/blob/main/img_readme/instruction_map_3.png)
 
 Step 3: Set billing for this project: https://console.cloud.google.com/projectselector/billing
 Note: use of maps is free </br>
@@ -149,15 +149,15 @@ Note: use of maps is free </br>
 Step 4: Enable MapsSDK for
 Android: https://console.cloud.google.com/apis/library/maps-android-backend.googleapis.com </br>
 
-![](https://github.com/Mobile-Telematics/telematics-open-source-app-android/blob/master/img_readme/instruction_map_4.png)
+![](https://github.com/Mobile-Telematics/telematics-open-source-app-android/blob/main/img_readme/instruction_map_4.png)
 
 Step 5: Go to the Google Maps Platform → Credentials page → Create credentials → API key. </br>
 
-![](https://github.com/Mobile-Telematics/telematics-open-source-app-android/blob/master/img_readme/instruction_map_5.png)
+![](https://github.com/Mobile-Telematics/telematics-open-source-app-android/blob/main/img_readme/instruction_map_5.png)
 
-![](https://github.com/Mobile-Telematics/telematics-open-source-app-android/blob/master/img_readme/instruction_map_6.png)
+![](https://github.com/Mobile-Telematics/telematics-open-source-app-android/blob/main/img_readme/instruction_map_6.png)
 
-![](https://github.com/Mobile-Telematics/telematics-open-source-app-android/blob/master/img_readme/instruction_map_7.png)
+![](https://github.com/Mobile-Telematics/telematics-open-source-app-android/blob/main/img_readme/instruction_map_7.png)
 
 Step 6: After API key is created, copy it to GOOGLE_MAP_API parameter in AppConfig.kt file. </br>
 
