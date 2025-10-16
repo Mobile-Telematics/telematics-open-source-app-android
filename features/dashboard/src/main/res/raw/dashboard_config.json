@@ -1,0 +1,13 @@
+{
+  "tripRecordModeEnabled": true,
+  "statisticsEnabled": true,
+  "statisticsDriveCoinsEnabled": true,
+  "statisticsRankEnabled": true,
+  "videoEnabled": false,
+  "scoreTrendEnabled": true,
+  "annualDrivingSummaryEnabled": true,
+  "ecoScoringEnabled": true,
+  "lastScoredTripEnabled": true,
+  "drivingSrakesEnabled": false,
+  "leaderboardEnabled": true
+}

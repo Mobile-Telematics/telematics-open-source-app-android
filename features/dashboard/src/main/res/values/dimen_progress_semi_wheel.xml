@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="semi_count_text_size">40dp</dimen>
+    <dimen name="semi_count_text_size_half">20dp</dimen>
+    <dimen name="semi_bar_width">8dp</dimen>
+</resources>

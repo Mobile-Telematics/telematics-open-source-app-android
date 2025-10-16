@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners
+        android:bottomLeftRadius="140dp"
+        android:bottomRightRadius="140dp"
+        android:topLeftRadius="140dp"
+        android:topRightRadius="140dp" />
+    <size android:height="@dimen/round_progressbtn_height" />
+    <solid android:color="@color/colorTripButton" />
+</shape>

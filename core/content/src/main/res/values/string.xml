@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="nav_item_trips">Trips</string>
+    <string name="nav_item_leaders">Leaders</string>
+    <string name="nav_item_dashboard">Dashboard</string>
+    <string name="nav_item_reward">Rewards</string>
+    <string name="nav_item_settings">Settings</string>
+    <string name="nav_item_profile">Profile</string>
+
+    <!-- onboarding -->
+
+    <!-- Login Screen -->
+    <string name="login_screen_hint_email">Email Address</string>
+    <string name="login_screen_hint_password">Password</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="dialog_cancel">CANCEL</string>
+    <string name="dialog_confirm">OK</string>
+
+    <string name="dialog_new_user">Welcome to the app, we detected you first time login to the application. To make your process seamless we sent you an email with a link to create a password for your account.</string>
+    <string name="dialog_no_user">You are not registered in the app, Sign up and enjoy the app.</string>
+    <string name="auth_error_user_exist">The user with the provided email already exists</string>
+
+    <string name="sign_in_go_sign_up">Don\'t have an account?</string>
+    <string name="sign_in_end_sign_up">Sign up</string>
+
+    <string name="sign_un_go_sign_in">Already have a account?</string>
+    <string name="sign_up_end_sign_in">Sign in</string>
+
+    <string name="sign_in_new_password">Get new password</string>
+    <string name="sign_in_new_email">Use different email</string>
+    <string name="dialog_reset_password">Email has been sent!\nPlease check your inbox and click in the received link to reset password.</string>
+
+    <string name="auth_error_invalid_password">Password is incorrect</string>
+
+    <string name="login_screen_policy">Privacy Policy</string>
+    <string name="login_screen_terms">Terms Of Use</string>
+
+    <!--profile-->
+
+    <string name="logout">Logout</string>
+
+    <string name="crop_screen_title">Crop Image</string>
+    <string name="crop_screen_done">DONE</string>
+    <string name="crop_screen_access_denied">Access denied</string>
+
+    <!--Verify code Screen-->
+
+    <!--dashboard ecoscoring period-->
+
+    <!-- Change pass Screen -->
+
+    <!--account-->
+    <string name="acc_wizard_btn_save">Save</string>
+    <string name="account_access_permission_msg">Please allow access to camera and media</string>
+    <string name="account_my_cars">My Vehicles</string>
+    <string name="account_add_new_car">Add new vehicle</string>
+    <string name="account_car_title">Car</string>
+    <!--car-->
+    <string name="vehicle_licence_plate">LICENSE PLATE</string>
+    <string name="vehicle_vin_number">VIN NUMBER</string>
+    <string name="vehicle_manufacturer">MAKE</string>
+    <string name="vehicle_model">MODEL</string>
+    <string name="vehicle_car_name">CAR NICKNAME</string>
+    <string name="acc_wizard_car_year">CAR YEAR</string>
+    <string name="vehicle_initial_mileage">INITIAL MILEAGE</string>
+
+    <!-- Account Wizard Profile -->
+    <!-- Account Wizard Profile -->
+    <string name="change_profile_first_name_hint">First name</string>
+    <string name="change_profile_last_name_hint">Last name</string>
+    <string name="change_profile_phone_number_hint">Phone number</string>
+    <string name="change_profile_birth_date_hint">Birth Date</string>
+    <string name="change_profile_client_id_hint">Client Id</string>
+
+    <string name="retry">Retry</string>
+    <string name="dashboard_new_overall_score">Overall Score</string>
+    <string name="dashboard_new_acceleration_score">Acceleration Score</string>
+    <string name="dashboard_new_braking_score">Braking Score</string>
+    <string name="dashboard_new_phone_dist_score">Phone Distraction Score</string>
+    <string name="dashboard_new_speeding_score">Speeding Score</string>
+    <string name="dashboard_new_cornering_score">Cornering Score</string>
+    <string name="dashboard_new_points">points</string>
+    <string name="dashboard_new_km">km</string>
+    <string name="dashboard_new_mi">mi</string>
+    <string name="dashboard_new_hours">hours</string>
+    <string name="trip_details_thanks">"Thank you, we've received\n your feedback!"</string>
+    <string name="trip_details_error">"Your internet connection is unstable.\n Please, try again later."</string>
+    <string name="trip_details_claim">Claim</string>
+    <string name="trip_details_review">Review</string>
+    <string name="trip_details_there_was_no_event_here">There was NO event here:</string>
+    <string name="trip_details_there_was_another_event_here">There was another event here:</string>
+
+    <string name="common_time_in_hm_format">%1$d:%2$02d</string>
+
+    <!--authorization errors message-->
+    <string name="server_error_something_went_wrong">Something went wrong, please try again later.</string>
+    <string name="auth_error_network">Check your network connection</string>
+    <string name="auth_error_empty_email">Email field must be filled</string>
+    <string name="auth_error_incorrect_email">Email address isn’t correct</string>
+    <string name="auth_error_empty_password">Password field must be filled</string>
+    <string name="auth_error_short_password">Password must be at least %d characters</string>
+
+    <string name="dashboard_eco_fuel">Fuel</string>
+    <string name="dashboard_eco_tyres">Tyres</string>
+    <string name="dashboard_eco_brakes">Brakes</string>
+    <string name="dashboard_eco_cost">Cost of ownership</string>
+
+    <!-- Trips -->
+    <string name="progress_trip_type_driver">Driver</string>
+    <string name="progress_trip_type_passenger">Passenger</string>
+    <string name="progress_trip_type_bus">Bus</string>
+    <string name="progress_trip_type_motorcycle">Motorcycle</string>
+    <string name="progress_trip_type_train">Train</string>
+    <string name="progress_trip_type_taxi">Taxi</string>
+    <string name="progress_trip_type_bicycle">Bicycle</string>
+    <string name="progress_trip_type_other">Other</string>
+    <string name="progress_trip">Trip</string>
+    <string name="dialog_events_delete_trip">Delete this trip?</string>
+    <string name="dialog_events_hide_trip">Hide this trip?</string>
+    <string name="are_you_sure">Are you sure?</string>
+    <string name="dialog_yes">YES</string>
+    <string name="dialog_no">NO</string>
+    <string name="progress_event_trip">Trip</string>
+
+    <string name="none">None</string>
+    <string name="personal">Personal</string>
+    <string name="business">Business</string>
+
+    <!--SETTINGS-->
+    <string name="dashboard_settings_my_profile">My Profile</string>
+    <string name="dashboard_settings_obd">Connect OBD device</string>
+    <string name="dashboard_settings_privacy">Privacy Policy</string>
+    <string name="dashboard_settings_terms">Terms of Use</string>
+    <string name="dashboard_settings_rate">Rate our app</string>
+    <string name="nav_logout_question">Logout?</string>
+    <string name="nav_logout_yes">logout</string>
+    <string name="nav_logout_no">no</string>
+
+    <!--COMPANY ID-->
+    <string name="if_you_have_a_company_invitation_code">If you have a Company invitation code, enter it in the field below.</string>
+    <string name="dashboard_settings_company_id">Join a Company</string>
+    <string name="invite_code">Invite code</string>
+    <string name="company_screen_join">JOIN</string>
+    <string name="dashboard_settings_company_id_success">You have successfully joined%1$s</string>
+    <string name="company_screen_invalid_code">Invite code is invalid</string>
+
+    <!--MEASURES-->
+    <string name="dashboard_settings_measures">Measures</string>
+    <string name="settings_measure_distance">Distance</string>
+    <string name="settings_measure_km">km</string>
+    <string name="settings_measure_mi">mi</string>
+    <string name="settings_measure_date_format">Date format</string>
+    <string name="settings_measure_dd_mm_yyy">dd/mm</string>
+    <string name="settings_measure_mm_dd_yyy">mm/dd</string>
+    <string name="settings_measure_time_format">Time format</string>
+    <string name="settings_measure_24h">24h</string>
+    <string name="settings_measure_12h">12h</string>
+    <string name="settings_measure_map_scheme">Map Scheme</string>
+    <string name="settings_measure_map_dark">dark</string>
+    <string name="settings_measure_map_light">light</string>
+
+    <!--TRIP DETAILS-->
+    <string name="trip_details_title">Trip Details</string>
+    <string name="trip_details_swipe_up_for_details">Swipe up for details</string>
+    <string name="trip_details_point_a">A</string>
+    <string name="trip_details_point_b">B</string>
+    <string name="trip_details_acceleration_score">Acceleration Score</string>
+    <string name="trip_details_braking_score">Braking Score</string>
+    <string name="trip_details_phone_dist_score">Phone Distraction Score</string>
+    <string name="trip_details_speeding_score">Speeding Score</string>
+    <string name="trip_details_cornering_score">Cornering Score</string>
+    <string name="trip_details_km_h">Speed: %1$s km/h</string>
+    <string name="trip_details_mi_h">Speed: %1$s mi/h</string>
+    <string name="trip_details_max_force">Max Force: %1$s m/s/s</string>
+    <string name="trip_details_braking">Braking</string>
+    <string name="trip_details_acceleration">Acceleration</string>
+    <string name="trip_details_cornering">Cornering</string>
+    <string name="trip_details_phone_usage">Phone Usage</string>
+    <string name="trip_type_dialog_title">Trip Role</string>
+    <string name="trip_type_dialog_header">Please select your trip role</string>
+    <string name="something_went_wrong">Something went wrong</string>
+
+    <!-- LEADERBOARD -->
+    <string name="leaderboard_keep_driving">Keep driving!\nLeaderboard appears soon</string>
+    <string name="leaderboard_statistics">Statistics</string>
+    <string name="leaderboard_mileage">Mileage</string>
+    <string name="leaderboard_rate">Overall Safety Score</string>
+    <string name="leaderboard_acceleration">Acceleration</string>
+    <string name="leaderboard_deceleration">Braking</string>
+    <string name="leaderboard_distraction">Distraction</string>
+    <string name="leaderboard_speeding">Speeding</string>
+    <string name="leaderboard_turn">Cornering</string>
+    <string name="leaderboard_time_driven">Time Driven</string>
+    <string name="leaderboard_total_trips">Total Trips</string>
+    <string name="leaderboard_full_name">FULL NAME</string>
+    <string name="leaderboard_details_title">Leaderboard</string>
+
+    <!--REWARDS-->
+    <string name="rewards_invite_info">You are about to earn\nsome <b>DriveCoins!</b></string>
+    <string name="drive_coins_title">Drivecoins</string>
+    <string name="streaks_title">Streaks</string>
+    <string name="rewards_invite_start">Start Now</string>
+    <string name="rewards_invite_support"><u>Support</u></string>
+    <string name="earned_coins_title">Acquired Coins</string>
+    <string name="daily_limit_placeholder">— — — Daily limit: %1$s</string>
+    <string name="all_time_tab_title">All time</string>
+    <string name="day_tab_title">Day</string>
+    <string name="this_month_tab_title">This month</string>
+    <string name="last_month_tab_title">Last month</string>
+    <string name="distance_title">Mileage</string>
+    <string name="duration_title">Time Driven</string>
+    <string name="accelerations_title">Accelerations</string>
+    <string name="brakings_title">Brakings</string>
+    <string name="cornerings">Cornerings</string>
+    <string name="phone_usage_title">Phone Usage</string>
+    <string name="speeding_title">Speeding</string>
+    <string name="risk_score_title">Safety score</string>
+    <string name="trips_title">Trips</string>
+    <string name="coins_total_title">Coins Total</string>
+    <string name="leaf_text">Leaf</string>
+    <string name="eco_score_text">Eco Score</string>
+    <string name="brakes_title">Brakes</string>
+    <string name="fuel_title">Fuel</string>
+    <string name="tyres_title">Tyres</string>
+    <string name="aquired_coins_info">Earned Coins before applying daily limit</string>
+    <string name="cost_of_ownership_title">Cost of ownership</string>
+    <string name="current_title_text">Current:</string>
+    <string name="trips_title_card">trips</string>
+    <string name="acceleration_card_title">Trips Without Harsh Acceleration</string>
+    <string name="braking_card_title">Trips Without Hard Braking</string>
+    <string name="speeding_card_title">Trips Without Speeding</string>
+    <string name="distraction_card_title">Trips Without Distraction</string>
+    <string name="cornering_card_title">Trips Without Hard Cornering</string>
+    <string name="phone_card_title">Trips Without Phone Usage</string>
+    <string name="current_duration_placeholder">You haven\'t had a current yet</string>
+    <string name="best_duration_placeholder">You haven\'t had a best yet</string>
+    <string name="best_block_title">Best:</string>
+    <string name="travelling">Travelling</string>
+    <string name="safe_driving">Safe Driving</string>
+    <string name="eco_driving">Eco Driving</string>
+
+    <!--ERRORS-->
+    <string name="server_error_error">Service is temporarily unavailable.</string>
+    <string name="link_open_error">Can\'t open the link.</string>
+
+    <!--OBD-->
+
+    <string name="obd_select_vehicle_title">Select vehicle</string>
+    <string name="odb_step_1">STEP <b>1</b></string>
+    <string name="odb_step_2">STEP <b>2</b></string>
+    <string name="odb_step_3">STEP <b>3</b></string>
+    <string name="odb_install_your_device">Install Your Device</string>
+    <string name="odb_connect_the_device_to_the_can_port">Connect the Device to the CAN Port in\nyour vehicle. The CAN port is normally\nlocated below the dashboard, next to\nyour steering wheel.</string>
+    <string name="odb_can_t_find_the_can">Can’t find the CAN\nPort in your car?</string>
+    <string name="odb_turn_on_your_vehicle">Turn On Your Vehicle</string>
+    <string name="odb_start_your_engine_to_power_on_your_device">Start your engine to power on your Device.</string>
+    <string name="odb_take_a_photo_of_your_odometer">Take a photo of your Odometer</string>
+    <string name="odb_the_photo_will_show_the_odometer">The photo will show the odometer\nreading at the start of your policy.</string>
+    <string name="odb_prepare_the_device_for_pairing">Prepare the Device for pairing</string>
+    <string name="odb_make_sure_the_device_in">Make sure the Device is plugged\ninto the CAN Port.</string>
+    <string name="odb_turn_on_bluetooth">Turn on Bluetooth</string>
+    <string name="odb_to_continue_please_enable_bluetooth">To continue, please enable Bluetooth in\nSettings or Control Centre on your phone.</string>
+    <string name="odb_search">SEARCH</string>
+    <string name="odb_oops_we_couldnt">Oops, we couldn’t\nconnect to your Device!</string>
+    <string name="odb_we_can_t_find_your_device">We can’t find your Device.\nPlease make sure that:</string>
+    <string name="odb_tips">- Your engine is turned on\n\n\n- Your Device is installed and has a red light\n\n\n- Your mobile Bluetooth is switched on\n\n\n- Your Device is already paired</string>
+    <string name="odb_try_again">TRY AGAIN</string>
+    <string name="odb_unfortunately_car_not_supported">Unfortunately, your car\nis not supported</string>
+    <string name="odb_if_your_car_model">If your car model was manufactured\nbefore 1996, our Device will\nnot support it.</string>
+    <string name="odb_give_us_a_call_at">Give us a call at:</string>
+    <string name="odb_1_300_824_227">1 300 824 227</string>
+    <string name="odb_chat_with_us">or chat with us through the app</string>
+    <string name="quit">QUIT</string>
+    <string name="odb_successfully_paired">Successfully\nPaired</string>
+    <string name="odb_congratulations_nyour_device_is_now_ready">Congratulations!\nYour Device is now ready!</string>
+    <string name="odb_device_number">Device number: %1$s</string>
+    <string name="odb_policy_number">Policy number: %1$s</string>
+    <string name="next">Next</string>
+    <string name="sign_up_at">Sign Up</string>
+    <string name="odb_we_found_these_devices">We found these Devices</string>
+    <string name="odb_please_select_the_device">Please select the Device that you would\nlike to link to your policy.</string>
+    <string name="odb_can_t_see_your_device_listed">Can’t see your Device listed?\nTry again.</string>
+    <string name="odb_looking_for_a_device">Looking for a device</string>
+    <string name="odb_please_wait_while_we_search_for_your_device">Please wait while we search for your Device. This may take up to one minute.</string>
+    <string name="odb_once_we_find_it">Once we find it, you will be automatically directed to the next page.</string>
+    <string name="obd_select_the_vehicle">Select the vehicle you’re installing the\nDevice in, from the list below\nor add a new vehicle.</string>
+    <string name="obd_your_vehicles">Your Vehicles</string>
+    <string name="odb_confirm">CONFIRM</string>
+    <string name="odb_would_you_like_to_use_this_photo">Would you like to use this photo?</string>
+    <string name="obd_internet_error">Your internet connection is unstable.</string>
+    <string name="obd_taking_too_long">Taking too long?</string>
+    <string name="obd_finish">FINISH</string>
+    <string name="obd_no_vehicles_error">You cars list is empty</string>
+    <string name="obd_device_activated">Device Activated</string>
+    <string name="obd_car_last_session_min">Connected (%dm ago)</string>
+    <string name="obd_car_last_session_hours">Connected  (%dh ago)</string>
+    <string name="obd_car_last_session_days">Connected (%dd ago)</string>
+    <string name="obd_car_last_session_never">Not Connected</string>
+    <string name="obd_search">Search</string>
+    <string name="obd_help_link">http://help.telematicssdk.com/en/articles/4170881-obd-settings</string>
+    <string name="obd_ble_error">Your devices do not support BLE</string>
+
+
+    <!--On Demand-->
+
+    <!-- SDK Utils -->
+    <string name="dialog_sdk_persistent_notification_instructions">For optimal app function, a persistent notification is displayed. If preferred, disable it without affecting performance by tapping Settings.\nThanks for your understanding.</string>
+    <string name="dialog_sdk_persistent_notification_title">Notification Reminder</string>
+    <string name="dialog_sdk_settings">Settings</string>
+    <string name="dialog_sdk_skip">Skip</string>
+
+    <string name="message_double_back_press">Press once again to exit!</string>
+
+    <!-- Dashboard -->
+    <string name="dashboard_trip_record_mode">Trip Record Mode</string>
+    <string name="dashboard_statistics">Statistics</string>
+    <string name="dashboard_last_scored_trip">Last scored trip</string>
+    <string name="dashboard_eco_scoring">Eco scoring</string>
+    <string name="dashboard_annual_driving">Annual Driving Summary</string>
+    <string name="dashboard_driving_strakes">Driving strakes</string>
+    <string name="dashboard_learn_more">Learn more</string>
+    <string name="dashboard_leaderboard">Leaderboard</string>
+    <string name="dashboard_view_full_leaderboard">View full leaderboard</string>
+    <string name="dashboard_score_trend">14-Day Score Trend</string>
+
+    <string name="dashboard_attention">Drive more to unlock your driving stats!</string>
+
+    <string name="dashboard_always_on">Always On</string>
+    <string name="dashboard_shift_mode">Shift Mode</string>
+    <string name="dashboard_sign_on">Sign on</string>
+    <string name="dashboard_sign_off">Sign off</string>
+    <string name="dashboard_on_demand">On-Demand</string>
+    <string name="dashboard_start">Start</string>
+    <string name="dashboard_stop">Stop</string>
+    <string name="dashboard_disabled">Disabled</string>
+
+    <string name="dashboard_always_on_des">All trips are recorded</string>
+    <string name="dashboard_shift_mode_des">Trips are recorded during your working day after you Sign On</string>
+    <string name="dashboard_on_demand_des">A trip is recorded when you start it manually</string>
+
+    <string name="dashboard_trip_record_mode_success">The trip recording mode has been changed successfully!</string>
+    <string name="dashboard_trip_record_mode_failure">Something went wrong. Please try again.</string>
+
+    <string name="dashboard_safe_driving_score">Safe Driving Score</string>
+
+    <string name="dashboard_high_risk_driving">0–55: High-Risk Driving</string>
+    <string name="dashboard_high_risk_driving_explanation">– Immediate Intervention Needed: This range indicates a high level of aggressive driving behavior that requires immediate corrective actions, such as driver retraining or other interventions.</string>
+    <string name="dashboard_aggressive_driving">55–70: Aggressive Driving</string>
+    <string name="dashboard_aggressive_driving_explanation">- Supervised Improvement Required: Drivers in this range exhibit aggressive driving tendencies. Active monitoring and supervised driving improvement programs are advised to enhance safety.</string>
+    <string name="dashboard_moderate_driving">70–85: Moderate Driving</string>
+    <string name="dashboard_moderate_driving_explanation">- Regular Monitoring Advised: This category represents moderate driving skills. While not overtly aggressive, drivers in this range should be regularly monitored to encourage safer driving habits.</string>
+    <string name="dashboard_safe_driving">85–100: Safe Driving</string>
+    <string name="dashboard_safe_driving_explanation">- Maintain Standards: This is the ideal range, indicating safe and responsible driving behavior. Drivers in this category should be encouraged to maintain these high standards of road safety.</string>
+
+    <string name="dashboard_rank">Rank</string>
+
+    <string name="dashboard_dialog_re_auth_title">Re-authentication required</string>
+    <string name="dashboard_dialog_re_auth_des">For your security, please re-enter your password to continue.</string>
+    <string name="dashboard_dialog_re_auth_logged">Logged in as:</string>
+    <string name="dashboard_dialog_re_auth_hint">Enter your password</string>
+    <string name="dashboard_dialog_re_auth_error">Invalid password</string>
+    <string name="dashboard_dialog_re_auth_reset_password">Reset Password</string>
+    <string name="dashboard_dialog_confirm_btn">Confirm</string>
+    <string name="dashboard_dialog_log_out_btn">Logout instead</string>
+
+    <string name="dashboard_dialog_update_title">Update required</string>
+    <string name="dashboard_dialog_update_des">Please update the app to continue using it</string>
+    <string name="dashboard_dialog_update_btn">Update</string>
+
+    <string name="dashboard_trips">Total Trips</string>
+    <string name="dashboard_mileage">Mileage</string>
+    <string name="dashboard_hours">Hours Driven</string>
+
+    <string name="dashboard_no_Speeding">No Speeding</string>
+    <string name="dashboard_safe_maneuvers">Safe Maneuvers</string>
+    <string name="dashboard_position">You are %1$d</string>
+    <string name="dashboard_position_percent">%1$d%% better than other drivers on the road</string>
+
+    <string name="dashboard_permissions_granted">All permissions granted!</string>
+
+    <string name="back_to_profile">Back to My Profile</string>
+    <string name="success_title">Great!</string>
+    <string name="failure_title">Oops!</string>
+
+    <string name="dialog_button_cancel">Cancel</string>
+    <string name="dialog_button_ok">Ok</string>
+
+    <string name="logbook_title">Driver Logbook</string>
+
+    <string name="logbook_date_format_standard">Standard</string>
+    <string name="logbook_date_format_iso">ISO</string>
+    <string name="logbook_date_format_us">US</string>
+    <string name="logbook_date_format_eu">EU</string>
+
+    <string name="logbook_units_metric">Metric</string>
+    <string name="logbook_units_imperial">Imperial</string>
+
+    <string name="logbook_type_of_report_detailed">Detailed</string>
+    <string name="logbook_type_of_report_daily_summary">Daily Summary</string>
+
+
+    <string name="logbook_email">Email</string>
+    <string name="logbook_from">From</string>
+    <string name="logbook_to">To</string>
+    <string name="logbook_start_date">Start date</string>
+    <string name="logbook_end_date">End date</string>
+    <string name="logbook_units">Units</string>
+    <string name="logbook_date_format">Date format</string>
+    <string name="logbook_report_type">Report type</string>
+
+    <string name="logbook_submit">Submit</string>
+    <string name="logbook_error_email">Invalid email address</string>
+    <string name="logbook_empty_email">Email is required</string>
+    <string name="logbook_empty_start_date">Start date is required</string>
+    <string name="logbook_empty_end_date">End date is required</string>
+    <string name="logbook_error_date">End date can not be less than Start day</string>
+    <string name="logbook_success">Trip logbook generation started. You will receive an email when it\'s ready.</string>
+
+    <string name="profile_details_choose_photo_title">Choose photo</string>
+    <string name="profile_details_take_photo_title">Take photo</string>
+    <string name="profile_details_cancel_button">Cancel</string>
+    <string name="next_button">Next</string>
+    <string name="close_button">Close</string>
+
+    <string name="edit_profile_title">Edit Profile</string>
+    <string name="account_profile_driver_information">Driver Information</string>
+
+    <string name="account_add_profile">Add Profile</string>
+
+    <string-array name="onboarding_titles">
+        <item>Welcome to ZenRoad</item>
+        <item>Open-code and\nOut-of-the-box</item>
+        <item>Stream your Telematics\ndata with Damoov</item>
+        <item>Prepare to get on\nthe Telematics Track</item>
+    </string-array>
+    <string-array name="onboarding_subtitles">
+        <item>You\'r about to launch our demo app ZenRoad running on Damoov\'s Telematics SDK.</item>
+        <item>ZenRoad is open-code and available for customization at no cost. This means you can launch your Zenroad-like app almost instantly.</item>
+        <item>Damoov will serve as your data source to send your Telematics data any way you want it. Send it to 3rd party-services, work with raw data, or simply create a back-end integration.</item>
+        <item>@string/onboarding_p4_text</item>
+    </string-array>
+    <string name="onboarding_p4_text">ZenRoad is just a tip of Damoov platform. Sign up at <a href="http://damoov.com/">damoov.com</a> and see the full set of services: Web-Interface, SDK, APIs, Extensions and so much more.</string>
+
+</resources>

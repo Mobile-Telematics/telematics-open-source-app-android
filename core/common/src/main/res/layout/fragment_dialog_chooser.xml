@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/partner_card"
+    style="?attr/bottomSheetStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="0dp"
+    app:layout_behavior="@string/bottom_sheet_behavior">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_avatar_gray_button_background"
+        android:baselineAligned="false"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/take_photo_button"
+            style="@style/TextAppearance.EditProfile.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:background="@drawable/edit_avatar_button_ripple_effect"
+            android:clickable="true"
+            android:drawablePadding="8dp"
+            android:gravity="start"
+            android:text="@string/profile_details_take_photo_title"
+            app:drawableEndCompat="@drawable/ic_arrow_forward_24"
+            app:drawableStartCompat="@drawable/ic_camera_32" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/color_gray" />
+
+        <TextView
+            android:id="@+id/choose_photo_button"
+            style="@style/TextAppearance.EditProfile.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:background="@drawable/edit_avatar_button_ripple_effect"
+            android:clickable="true"
+            android:drawablePadding="8dp"
+            android:gravity="start"
+            android:text="@string/profile_details_choose_photo_title"
+            app:drawableEndCompat="@drawable/ic_arrow_forward_24"
+            app:drawableStartCompat="@drawable/ic_photo_gallery_32" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <TextView
+        android:id="@+id/cancel_button"
+        style="@style/TextAppearance.EditProfile.Button.Alt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit_avatar_white_button_background"
+        android:clickable="true"
+        android:text="@string/profile_details_cancel_button" />
+</LinearLayout>

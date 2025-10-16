@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Buttons -->
+    <style name="Button">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:background">@drawable/selector_default_btn</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:textColor">@color/design_white</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/open_sans_semibold_600</item>
+    </style>
+
+    <style name="Button.Filled">
+        <item name="android:background">@drawable/selector_design_def_filled_btn</item>
+    </style>
+
+    <style name="Button.Outlined">
+        <item name="android:background">@drawable/selector_design_def_btn</item>
+        <item name="android:textColor">@color/design_def_button_text_sel</item>
+    </style>
+
+    <!--<style name="Button.Filled">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:background">@drawable/selector_filled_btn</item>
+        <item name="android:minHeight">40dp</item>
+        <item name="android:paddingLeft">@dimen/btn_padding_left</item>
+        <item name="android:paddingRight">@dimen/btn_padding_right</item>
+        <item name="android:textColor">@color/filled_button_text_sel</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="Button.Outlined">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:background">@drawable/selector_outlined_btn</item>
+        <item name="android:minHeight">40dp</item>
+        <item name="android:paddingLeft">@dimen/btn_padding_left</item>
+        <item name="android:paddingRight">@dimen/btn_padding_right</item>
+        <item name="android:textColor">@color/outlined_button_text_sel</item>
+        <item name="android:textSize">18sp</item>
+    </style>-->
+
+    <style name="TextAppearance.EditProfile.Button" parent="TextAppearance.AppCompat">
+        <item name="android:textSize" tools:ignore="SpUsage">20dp</item>
+        <item name="android:textColor">@color/text_color_black</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:fontFamily">@font/open_sans_regular_400</item>
+        <item name="fontFamily">@font/open_sans_regular_400</item>
+    </style>
+
+    <style name="TextAppearance.EditProfile.Button.Alt" parent="TextAppearance.AppCompat">
+        <item name="android:textSize" tools:ignore="SpUsage">20dp</item>
+        <item name="android:textColor">@color/text_color_black</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:fontFamily">@font/open_sans_bold_700</item>
+        <item name="fontFamily">@font/open_sans_bold_700</item>
+    </style>
+
+    <style name="BottomSheetDialog" parent="ThemeOverlay.MaterialComponents.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/BottomSheetModal</item>
+    </style>
+
+    <style name="BottomSheetModal" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="DatePicker" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:headerBackground">@color/primary_500</item>
+        <item name="colorPrimary">@color/design_white</item>
+        <item name="colorPrimaryDark">@color/primary_500</item>
+        <item name="colorAccent">@color/primary_500</item>
+        <item name="android:windowBackground">@color/design_white</item>
+        <item name="android:textColorPrimary">@color/color_black</item>
+        <item name="colorControlActivated">@color/primary_500</item>
+        <item name="colorControlHighlight">@color/primary_500</item>
+    </style>
+</resources>

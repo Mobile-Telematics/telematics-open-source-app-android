@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/splash_nav_graph">
+
+    <include app:graph="@navigation/splash_nav_graph" />
+    <include app:graph="@navigation/onboarding_nav_graph" />
+    <include app:graph="@navigation/login_nav_graph" />
+    <include app:graph="@navigation/settings_nav_graph" />
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.telematics.zenroad.ui.MainFragment"
+        android:label="MainFragment"
+        tools:layout="@layout/fragment_main">
+        <action
+            android:id="@+id/action_mainFragment_to_splash_nav_graph"
+            app:destination="@id/splash_nav_graph"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/main_nav_graph"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_mainFragment_to_settings_nav_graph"
+            app:destination="@id/settings_nav_graph"
+            app:enterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+
+        <argument
+            android:name="navigationTarget"
+            android:defaultValue="DEFAULT"
+            app:argType="com.telematics.core.model.NavigationTarget" />
+        <deepLink app:uri="@string/deep_link_main_fragment" />
+    </fragment>
+
+</navigation>

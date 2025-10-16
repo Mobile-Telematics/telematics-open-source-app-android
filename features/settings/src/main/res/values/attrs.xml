@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SettingsItemLayout">
+        <attr name="android:text" />
+        <attr name="switchEnabled" format="boolean" />
+        <attr name="switchChecked" format="boolean" />
+        <attr name="android:icon" />
+        <attr name="iconTint" format="color" />
+        <attr name="android:textColor" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="gps_permissions_notification_title">Seguimiento</string>
+
+    <string name="tracking_notification_title">Seguimiento</string>
+    <string name="tracking_notification_is_work">Tu viaje está siendo puntuado.</string>
+    <string name="tracking_notification_is_not_work">No hay viaje en progreso.</string>
+    <string name="tracking_notification_tracking_disabled">Seguimiento desactivado.</string>
+    <string name="tracking_notification_bluetooth_disabled">Hemos detectado que el Bluetooth está apagado. Debe estar activado para que el seguimiento funcione.</string>
+    <string name="tracking_notification_wifi_disabled">Hemos detectado que el Wi-Fi está apagado. Debe estar activado para que el seguimiento funcione.</string>
+    <string name="tracking_notification_gps_disabled">GPS desactivado. Pulsa la notificación para activar el GPS y otorgar permisos.</string>
+
+    <string name="tracking_notification_location_disabled">Ubicación desactivada. Pulsa la notificación y concede los permisos.</string>
+    <string name="tracking_notification_background_location_disabled">Ubicación en segundo plano desactivada. Pulsa la notificación y concede los permisos.</string>
+    <string name="tracking_notification_activity_recognition_disabled">Reconocimiento de actividad desactivado. Pulsa la notificación y concede los permisos.</string>
+
+    <string name="tracking_notification_wifi_gps_disabled">No hay señal GPS y el Wi-Fi está apagado. Por favor, activa el Wi-Fi y el acceso a la ubicación en Configuración.</string>
+    <string name="tracking_notification_channel_id">ID del canal de notificación</string>
+    <string name="tracking_notification_channel_name">Nombre del canal de notificación</string>
+    <string name="tracking_notification_power_saving_enabled">Tus viajes pueden no ser registrados cuando el modo ahorro de batería está activado.</string>
+    <string name="tracking_notification_looking_for_tracks_upload">Esperando la subida de los viajes</string>
+
+    <string name="battery_optimization_alert_title">Optimización de batería</string>
+    <string name="battery_optimization_alert_message">Por favor, permite que esta aplicación evite la optimización del sistema para un mejor rendimiento.</string>
+
+    <string name="dialog_telematics_location">Conceder permisos de ubicación</string>
+    <string name="dialog_telematics_location_background">Conceder ubicación en segundo plano</string>
+    <string name="dialog_telematics_battery">Activar seguimiento en segundo plano</string>
+    <string name="dialog_telematics_activity_recognition">Activar reconocimiento de actividad</string>
+    <string name="dialog_telematics_gps">Activar sensor GPS</string>
+    <string name="dialog_telematics_wifi">Activar Wi-Fi</string>
+    <string name="dialog_telematics_bluetooth">Activar Bluetooth</string>
+    <string name="dialog_telematics_mobile_data">Activar datos móviles</string>
+    <string name="dialog_telematics_data_turn_on">Activar datos telemáticos</string>
+    <string name="dialog_telematics_data_desc">Para recopilar datos precisos y completar el funcionamiento de la aplicación, necesitas conceder acceso a las siguientes funciones:</string>
+    <string name="dialog_telematics_notifications">Activar notificaciones</string>
+    <string name="dialog_telematics_notification_channel">Activar canal de notificación</string>
+
+    <string name="dialog_telematics_permission_denied">Permiso denegado</string>
+    <string name="dialog_telematics_notification_channel_disabled">Canal de notificación desactivado</string>
+    <string name="dialog_telematics_settings">Configuración</string>
+    <string name="dialog_telematics_not_now">Ahora no</string>
+    <string name="dialog_telematics_instructions_permission">No has concedido este permiso importante. Para puntuar tus viajes, todos los permisos deben ser aceptados. Por favor, ve a la configuración de la aplicación para aprobar este permiso.</string>
+    <string name="dialog_telematics_instructions_notification_channel">Has desactivado el canal de notificación importante "Servicio de rastreo". Para puntuar tus viajes este canal debe estar activado. Por favor, ve a la configuración de la aplicación para activarlo.</string>
+
+    <string name="wizard_telematics_attention">¡Atención requerida!</string>
+
+    <!-- Wizard storage section -->
+    <string name="wizard_telematics_storage_desc">Luego, recibirás una ventana emergente para otorgar permisos para almacenar temporalmente los datos de los viajes en el <b>almacenamiento del teléfono</b>.\n\n
+        Por favor, selecciona <b>Permitir</b> para que la aplicación almacene temporalmente los datos del viaje.
+    </string>
+    <string name="wizard_telematics_attention_dialog_storage_before">Permitir</string>
+    <string name="wizard_telematics_attention_dialog_storage_after">acceder \na fotos, \nmedios y archivos en tu \ndispositivo?</string>
+
+    <string name="wizard_telematics_location_desc">Como siguiente paso, recibirás una ventana emergente para otorgar permisos de acceso a la <b>ubicación</b>.\n\n
+        La aplicación utiliza tus datos de ubicación para registrar automáticamente tus viajes en segundo plano, determinar cuándo comenzaste y terminaste tu viaje y medir tu puntuación.\n\n
+        La aplicación no funcionará sin este permiso.\n\n
+        En la próxima ventana emergente, por favor selecciona <b>Permitir</b>.
+    </string>
+
+    <string name="wizard_telematics_background_location_desc">
+        Como siguiente paso, debes otorgar permisos para acceder a la <b>ubicación en segundo plano.</b>\n\n
+        La aplicación utiliza tus datos de ubicación para registrar automáticamente tus viajes en segundo plano, determinar cuándo has iniciado y terminado tu viaje y para calcular tu puntuación.\n\n
+        La aplicación no funcionará sin este permiso.\n\n
+        Debes ir a la configuración de la aplicación y elegir "<b>Permitir todo el tiempo</b>" en la pantalla de permisos de ubicación.
+    </string>
+
+    <!-- Android 11 only -->
+    <string name="wizard_telematics_location_additional_description"><small>Esta aplicación puede querer acceder a tu ubicación todo el tiempo, incluso cuando no estés usando la aplicación. <font color="#a7c7f9"><u>Permitir en configuración.</u></font></small></string>
+
+    <string name="wizard_telematics_attention_dialog_location_before">Permitir</string>
+    <string name="wizard_telematics_attention_dialog_location_after">acceder \na la ubicación de este dispositivo?</string>
+
+    <string name="wizard_telematics_attention_dialog_background_location_before">Cambiar acceso a ubicación para </string>
+    <string name="wizard_telematics_attention_dialog_background_location_after">\?</string>
+
+    <string name="wizard_telematics_location_additional_keep">Mantener \'Mientras se usa la aplicación\'</string>
+
+    <!-- Wizard activity recognition section -->
+    <string name="wizard_telematics_activity_recognition_desc">Luego, recibirás una ventana emergente para otorgar acceso a tu <b>actividad física</b>. \nNecesitamos esta información para crear una puntuación de conducción.\n\n
+        Por favor, selecciona <b>Permitir</b> para que la aplicación acceda a la actividad física.
+    </string>
+    <string name="wizard_telematics_attention_dialog_activity_recognition_before">Permitir</string>
+    <string name="wizard_telematics_attention_dialog_activity_recognition_after">acceder \na tu actividad física?</string>
+
+    <!-- Wizard gps services section -->
+    <string name="wizard_telematics_gps_google_desc">Pronto recibirás una ventana emergente para activar la <b>ubicación del dispositivo</b>, que usa el servicio de ubicación de Google.\n\n
+        Para que la aplicación funcione correctamente, selecciona <b>OK</b>.
+    </string>
+    <string name="wizard_telematics_attention_dialog_gps_google">Para una mejor experiencia, activa la ubicación del dispositivo, que usa el servicio de ubicación de Google.</string>
+    <string name="dialog_telematics_attention_dialog_gps_google_ok">OK</string>
+    <string name="dialog_telematics_attention_dialog_gps_google_no">No, gracias</string>
+
+    <!-- Wizard background/battery section -->
+    <string name="wizard_telematics_ignore_system_battery_optimization_desc">Pronto recibirás una ventana emergente para ignorar las <b>optimizaciones de batería</b>.\n\n
+        Para que la aplicación funcione correctamente, selecciona <b>PERMITIR</b>.
+    </string>
+    <string name="wizard_telematics_attention_dialog_battery"><small><b>¿Permitir que la aplicación siempre se ejecute en segundo plano?</b>\n\nPermitir que la aplicación se ejecute siempre en segundo plano puede reducir la duración de la batería.\n\nPuedes cambiar esto más tarde desde\nConfiguración > Aplicaciones y notificaciones.</small></string>
+    <string name="dialog_telematics_attention_dialog_battery_ok">PERMITIR</string>
+    <string name="dialog_telematics_attention_dialog_battery_no">DENEGAR</string>
+
+    <!-- Wizard manufacturers power management section -->
+    <string name="wizard_telematics_extra_power_management_desc">Al pulsar "Continuar" serás redirigido a la configuración para configurar la <b>gestión de energía</b>.\n
+    Para que la aplicación funcione correctamente, <b>DESACTIVA</b> la gestión de energía.
+    </string>
+
+    <!-- Wizard mi autostart section -->
+    <string name="wizard_telematics_extra_autostart_desc">Al pulsar "Continuar" serás redirigido a la configuración para configurar el <b>INICIO AUTOMÁTICO</b>.\n
+        Para que la aplicación funcione correctamente, <b>ACTIVA</b> el inicio automático.</string>
+
+    <!-- Wizard mi notifications section -->
+    <string name="wizard_telematics_extra_notifications_desc">Al pulsar "Continuar" serás redirigido a la configuración para configurar las <b>notificaciones</b>.\n
+        Para que la aplicación funcione correctamente, <b>ACTIVA</b> todas las notificaciones.</string>
+
+    <string name="wizard_telematics_show_request">Continuar</string>
+    <string name="wizard_telematics_deny">Denegar</string>
+    <string name="wizard_telematics_do_not_allow">No permitir</string>
+    <string name="wizard_telematics_allow">Permitir</string>
+    <string name="wizard_telematics_allow_all_time">Permitir todo el tiempo</string>
+    <string name="wizard_telematics_allow_while_using">Permitir solo mientras se usa la aplicación</string>
+    <string name="wizard_telematics_step" formatted="false">PASO %1s de %2s</string>
+    <string name="wizard_telematics_please_grant">Por favor, concede todos los permisos requeridos</string>
+
+    <!-- Android 11 -->
+    <string name="wizard_telematics_while_using_11">Mientras se usa la aplicación</string>
+    <string name="wizard_telematics_only_this_time">Solo esta vez</string>
+    <string name="wizard_telematics_ask_every_time">Preguntar cada vez</string>
+
+    <!--Synchronization-->
+    <string name="sync_notification_body">los datos se están sincronizando…</string>
+
+    <string name="change_to_precise_location">Cambiar a ubicación precisa</string>
+
+    <string name="wizard_telematics_location_desc_precise">Como siguiente paso, verás una ventana emergente para conceder acceso a los <b>servicios de ubicación</b>.\n\n
+        La aplicación usa tus datos de ubicación para registrar automáticamente tus viajes en segundo plano, determinar cuándo has iniciado y terminado tu viaje y para medir tu puntuación.\n\n
+        La aplicación no funcionará sin este permiso.\n\n
+        En la siguiente ventana emergente, por favor selecciona <b>Cambiar a ubicación precisa</b>.
+    </string>
+
+    <string name="wizard_telematics_bluetooth_desc">Como siguiente paso, recibirás una ventana emergente para conceder acceso a <b>Bluetooth</b>.\n\n
+        En la siguiente ventana emergente, por favor selecciona <b>Permitir</b>.
+    </string>
+
+    <string name="wizard_telematics_attention_dialog_bluetooth_before">Permitir</string>
+    <string name="wizard_telematics_attention_dialog_bluetooth_after">encontrar, conectar y determinar la posición relativa de dispositivos cercanos?</string>
+
+</resources>

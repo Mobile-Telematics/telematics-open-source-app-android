@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_account"
+    app:startDestination="@id/accountFragment">
+
+    <fragment
+        android:id="@+id/accountFragment"
+        android:name="com.telematics.features.account.ui.account.AccountFragment"
+        android:label="AccountFragment"
+        tools:layout="@layout/fragment_account">
+        <action
+            android:id="@+id/action_accountFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_accountFragment_to_cropFragment"
+            app:destination="@id/cropFragment" />
+        <action
+            android:id="@+id/action_accountFragment_to_vehicleFragment"
+            app:destination="@id/vehicleFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.telematics.features.account.ui.profile.ProfileFragment"
+        android:label="ProfileFragment"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/cropFragment"
+        android:name="com.telematics.core.common.fragment.CropFragment"
+        android:label="CropFragment"
+        tools:layout="@layout/fragment_crop_image" />
+
+    <fragment
+        android:id="@+id/vehicleFragment"
+        android:name="com.telematics.features.account.ui.account.vehicle.VehicleFragment"
+        android:label="VehicleFragment"
+        tools:layout="@layout/fragment_vehicle" />
+</navigation>

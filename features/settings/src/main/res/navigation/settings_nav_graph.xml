@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/settings_nav_graph"
+    app:startDestination="@id/settings_fragment">
+
+    <fragment
+        android:id="@+id/settings_fragment"
+        android:name="com.telematics.features.settings.SettingsFragment"
+        android:label="SettingsFragment"
+        tools:layout="@layout/fragment_settings">
+        <action
+            android:id="@+id/action_settings_fragment_to_companyIdFragment"
+            app:destination="@id/companyIdFragment" />
+        <action
+            android:id="@+id/action_settings_fragment_to_measuresFragment"
+            app:destination="@id/measuresFragment" />
+
+        <deepLink app:uri="@string/deep_link_settings_fragment" />
+        <action
+            android:id="@+id/action_settings_fragment_to_obd_nav_graph"
+            app:destination="@id/obd_nav_graph" />
+        <action
+            android:id="@+id/action_settings_fragment_to_driverLogbookFragment"
+            app:destination="@id/driverLogbookFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/companyIdFragment"
+        android:name="com.telematics.features.settings.company_id.CompanyIDFragment"
+        tools:layout="@layout/fragment_company_id" />
+
+    <fragment
+        android:id="@+id/measuresFragment"
+        android:name="com.telematics.features.settings.measures.MeasuresFragment"
+        tools:layout="@layout/fragment_measures" />
+
+
+    <include app:graph="@navigation/obd_nav_graph" />
+    <fragment
+        android:id="@+id/driverLogbookFragment"
+        android:name="com.telematics.features.settings.logbook.DriverLogbookFragment"
+        android:label="DriverLogbookFragment"
+        tools:layout="@layout/fragment_driver_logbook" />
+
+</navigation>

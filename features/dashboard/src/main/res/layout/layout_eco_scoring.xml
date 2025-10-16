@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:background="@drawable/bg_card"
+    tools:paddingHorizontal="16dp"
+    tools:paddingVertical="24dp"
+    tools:parentTag="androidx.constraintlayout.widget.ConstraintLayout">
+
+    <ImageView
+        android:id="@+id/fuel_img"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_fuel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/design_grey"
+        tools:ignore="ContentDescription"
+        tools:tint="@color/design_grey" />
+
+    <TextView
+        android:id="@+id/fuel_name"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="8dp"
+        android:ellipsize="end"
+        android:fontFamily="@font/open_sans_regular_400"
+        android:gravity="start|center"
+        android:maxLines="1"
+        android:text="@string/dashboard_eco_fuel"
+        android:textColor="@color/design_black"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/fuel_img"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toEndOf="@+id/fuel_img"
+        app:layout_constraintTop_toTopOf="@+id/fuel_img" />
+
+    <ProgressBar
+        android:id="@+id/fuel_progress"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="0dp"
+        android:layout_height="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="10dp"
+        android:progressDrawable="@drawable/progress_bg"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fuel_img"
+        tools:progress="50" />
+
+    <ImageView
+        android:id="@+id/brakes_img"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/ic_brake"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fuel_progress"
+        app:tint="@color/design_grey"
+        tools:ignore="ContentDescription"
+        tools:tint="@color/design_grey" />
+
+    <TextView
+        android:id="@+id/brakes_name"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="8dp"
+        android:ellipsize="end"
+        android:fontFamily="@font/open_sans_regular_400"
+        android:gravity="start|center"
+        android:maxLines="1"
+        android:text="@string/dashboard_eco_brakes"
+        android:textColor="@color/design_black"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/brakes_img"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toEndOf="@+id/brakes_img"
+        app:layout_constraintTop_toTopOf="@+id/brakes_img" />
+
+    <ProgressBar
+        android:id="@+id/brakes_progress"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="0dp"
+        android:layout_height="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="10dp"
+        android:progressDrawable="@drawable/progress_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/brakes_img"
+        tools:progress="50" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <ImageView
+        android:id="@+id/tires_img"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="10dp"
+        android:src="@drawable/ic_wheel"
+        app:layout_constraintStart_toEndOf="@id/guideline"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/design_grey"
+        tools:ignore="ContentDescription"
+        tools:tint="@color/design_grey" />
+
+    <TextView
+        android:id="@+id/tires_name"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="8dp"
+        android:ellipsize="end"
+        android:fontFamily="@font/open_sans_regular_400"
+        android:gravity="start|center"
+        android:maxLines="1"
+        android:text="@string/dashboard_eco_tyres"
+        android:textColor="@color/design_black"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tires_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tires_img"
+        app:layout_constraintTop_toTopOf="@+id/tires_img" />
+
+    <ProgressBar
+        android:id="@+id/tires_progress"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="0dp"
+        android:layout_height="4dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
+        android:progressDrawable="@drawable/progress_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@id/tires_img"
+        tools:progress="50" />
+
+    <ImageView
+        android:id="@+id/cost_img"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/ic_car"
+        app:layout_constraintStart_toEndOf="@id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/tires_progress"
+        app:tint="@color/design_grey"
+        tools:ignore="ContentDescription"
+        tools:tint="@color/design_grey" />
+
+    <TextView
+        android:id="@+id/cost_name"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="8dp"
+        android:ellipsize="end"
+        android:fontFamily="@font/open_sans_regular_400"
+        android:gravity="start|center"
+        android:maxLines="1"
+        android:text="@string/dashboard_eco_cost"
+        android:textColor="@color/design_black"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/cost_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/cost_img"
+        app:layout_constraintTop_toTopOf="@+id/cost_img" />
+
+    <ProgressBar
+        android:id="@+id/cost_progress"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="0dp"
+        android:layout_height="4dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
+        android:progressDrawable="@drawable/progress_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/guideline"
+        app:layout_constraintTop_toBottomOf="@id/cost_img"
+        tools:progress="50" />
+
+</merge>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:background="@color/design_light_black_90">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:navigationIcon="@drawable/ic_back"
+        app:title="@string/dashboard_settings_company_id"
+        app:titleTextAppearance="@style/app_toolbar"
+        app:titleTextColor="@color/design_white"
+        tools:theme="@style/AppTheme" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/neutral_white">
+
+        <TextView
+            android:id="@+id/profile_company_id_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:gravity="center"
+            android:text="@string/if_you_have_a_company_invitation_code"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/app_settings_toolbar_text_size"
+            app:layout_constraintBottom_toTopOf="@id/profile_company_id_input"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.2"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <EditText
+            android:id="@+id/profile_company_id_input"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/bg_text_input_rect"
+            android:gravity="center"
+            android:hint="@string/invite_code"
+            android:imeOptions="actionGo"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toTopOf="@id/profile_company_id_send"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/profile_company_id_text" />
+
+        <Button
+            android:id="@+id/profile_company_id_send"
+            style="@style/Button"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/selector_orange_btn"
+            android:backgroundTint="@color/colorDefButton"
+            android:text="@string/company_screen_join"
+            android:textAllCaps="true"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/profile_company_id_input" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

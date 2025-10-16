@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="wizard_telematics_location_desc">As the next step, you’ll see a popup to grant app access to <b>location services</b>.\n\n
+        The app uses your location data to automatically record your trips in background, determine when you have started and ended your trip and to measure your score.\n\n
+        The app will not work without this permission.\n\n
+        On the next popup, please select <b>While using the app</b>.
+    </string>
+</resources>

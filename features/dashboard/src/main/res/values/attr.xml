@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="countText" format="string" />
+    <attr name="progressColor" format="color" />
+    <attr name="rimColor" format="color" />
+    <attr name="backColor" format="color" />
+
+    <attr name="countTextColor" format="color" />
+
+    <attr name="barWidth" format="dimension" />
+
+    <attr name="countTextSize" format="dimension" />
+
+
+    <attr name="percentage" format="integer" />
+    <attr name="progressOffset" format="integer" />
+
+    <declare-styleable name="ProgressSemiWheelIndicator">
+        <attr name="countText" />
+        <attr name="startText" format="string" />
+        <attr name="endText" format="string" />
+
+        <attr name="progressColor" />
+        <attr name="rimColor" />
+        <attr name="backColor" />
+
+        <attr name="countTextColor" />
+        <attr name="subCountTextColor" format="color" />
+
+        <attr name="barWidth" />
+
+        <attr name="countTextSize" />
+
+        <attr name="percentage" />
+    </declare-styleable>
+</resources>

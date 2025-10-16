@@ -1,0 +1,174 @@
+[versions]
+
+# -------- Plugins ------------
+androidGradlePlugin = "8.13.0"
+androidImageCropper = "4.6.0"
+firebaseCrashlyticsPlugin = "3.0.6"
+googleServicesPlugin = "4.4.4"
+kotlin = "2.2.20"
+
+# ------ Dependencies ---------
+trackingApi = "3.1.1"
+
+androidDesugarJdkLibs = "2.1.5"
+androidxActivity = "1.11.0"
+androidxAppCompat = "1.7.1"
+androidxConstraintLayout = "2.2.1"
+androidxCoreKtx = "1.17.0"
+androidxFragment = "1.8.9"
+androidxLifecycle = "2.9.4"
+androidxNavigation = "2.9.5"
+androidxRecyclerView = "1.4.0"
+androidxRoom = "2.8.2"
+androidxSecurityCrypto = "1.1.0"
+androidxSwipeRefreshLayout = "1.1.0"
+
+
+ksp = "2.2.20-2.0.2"
+
+chartView = "v3.1.0"
+circleIndicatorView = "2.1.6"
+countryCodePicker = "2.7.3"
+dotsindicator = "5.1.0"
+
+daggerHilt = "2.57.2"
+
+firebaseBom = "34.4.0"
+
+javaxInject = "1"
+javaxAnnotations = "1.0"
+
+glide = "5.0.5"
+googleMaterial = "1.13.0"
+media3 = "1.8.0"
+
+muxPlayer = "1.2.2"
+
+kotlinxCoroutines = "1.10.2"
+
+okhttp = "5.2.1"
+
+retrofit = "3.0.0"
+
+googlePlayServicesMaps = "19.2.0"
+
+gson = "2.13.2"
+
+intercom = "17.2.0"
+
+junit = "4.13.2"
+androidx-test-ext-junit = "1.3.0"
+espresso-core = "3.7.0"
+
+[libraries]
+android-desugarJdkLibs = { group = "com.android.tools", name = "desugar_jdk_libs", version.ref = "androidDesugarJdkLibs" }
+
+# tracking & auth
+telematicssdk-tracking = { group = "com.telematicssdk", name = "tracking", version.ref = "trackingApi" }
+
+# android ui
+androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "androidxActivity" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "androidxAppCompat" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "androidxConstraintLayout" }
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "androidxCoreKtx" }
+androidx-fragment = { group = "androidx.fragment", name = "fragment", version.ref = "androidxFragment" }
+androidx-recyclerview = { group = "androidx.recyclerview", name = "recyclerview", version.ref = "androidxRecyclerView" }
+androidx-swiperefreshlayout = { group = "androidx.swiperefreshlayout", name = "swiperefreshlayout", version.ref = "androidxSwipeRefreshLayout" }
+
+mpAndroidChart = { group = "com.github.PhilJay", name = "MPAndroidChart", version.ref = "chartView" }
+circleIndicatorView = { group = "me.relex", name = "circleindicator", version.ref = "circleIndicatorView" }
+countryCodePicker = { group = "com.hbb20", name = "ccp", version.ref = "countryCodePicker" }
+dotsindicator = { module = "com.tbuonomo:dotsindicator", version.ref = "dotsindicator" }
+android-image-cropper = { module = "com.vanniktech:android-image-cropper", version.ref = "androidImageCropper" }
+
+glide = { group = "com.github.bumptech.glide", name = "glide", version.ref = "glide" }
+glide-ksp = { group = "com.github.bumptech.glide", name = "ksp", version.ref = "glide" }
+
+google-material = { group = "com.google.android.material", name = "material", version.ref = "googleMaterial" }
+
+androidx-media3-exoplayer = { group = "androidx.media3", name = "media3-exoplayer", version.ref = "media3" }
+androidx-media3-ui = { group = "androidx.media3", name = "media3-ui", version.ref = "media3" }
+
+muxplayer = { group = "com.mux.player", name = "android", version.ref = "muxPlayer" }
+
+# Intercom
+intercom-sdk = { group = "io.intercom.android", name = "intercom-sdk", version.ref = "intercom" }
+
+# di hilt
+dagger-hilt-android-compiler = { group = "com.google.dagger", name = "hilt-android-compiler", version.ref = "daggerHilt" }
+dagger-hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "daggerHilt" }
+
+# javax
+javax-inject = { group = "javax.inject", name = "javax.inject", version.ref = "javaxInject" }
+javax-annotation = { group = "javax.annotation", name = "jsr250-api", version.ref = "javaxAnnotations" }
+
+# security-crypto
+androidx-security-crypto = { group = "androidx.security", name = "security-crypto", version.ref = "androidxSecurityCrypto" }
+
+# coroutines
+kotlinx-coroutines-core = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "kotlinxCoroutines" }
+kotlinx-coroutines-android = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "kotlinxCoroutines" }
+
+# retrofit
+retrofit-converter-gson = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "retrofit" }
+retrofit-core = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
+
+okhttp-logging = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "okhttp" }
+
+google-gson = { group = "com.google.code.gson", name = "gson", version.ref = "gson" }
+
+# lifecycle
+androidx-lifecycle-viewmodel-ktx = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "androidxLifecycle" }
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "androidxLifecycle" }
+
+# navigation
+androidx-navigation-fragment-ktx = { group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref = "androidxNavigation" }
+androidx-navigation-ui-ktx = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "androidxNavigation" }
+
+firebase-bom = { group = "com.google.firebase", name = "firebase-bom", version.ref = "firebaseBom" }
+firebase-crashlytics = { group = "com.google.firebase", name = "firebase-crashlytics" }
+firebase-crashlytics-ndk = { group = "com.google.firebase", name = "firebase-crashlytics-ndk" }
+firebase-messaging = { group = "com.google.firebase", name = "firebase-messaging" }
+
+# google
+google-play-services-maps = { group = "com.google.android.gms", name = "play-services-maps", version.ref = "googlePlayServicesMaps" }
+
+# room DB
+androidx-room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "androidxRoom" }
+androidx-room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "androidxRoom" }
+androidx-room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "androidxRoom" }
+
+# Dependencies of the included build-logic
+android-gradlePlugin = { group = "com.android.tools.build", name = "gradle", version.ref = "androidGradlePlugin" }
+firebase-crashlytics-gradlePlugin = { group = "com.google.firebase", name = "firebase-crashlytics-gradle", version.ref = "firebaseCrashlyticsPlugin" }
+kotlin-gradlePlugin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "kotlin" }
+ksp-gradlePlugin = { group = "com.google.devtools.ksp", name = "com.google.devtools.ksp.gradle.plugin", version.ref = "ksp" }
+room-gradlePlugin = { group = "androidx.room", name = "room-gradle-plugin", version.ref = "androidxRoom" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-test-ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "androidx-test-ext-junit" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espresso-core" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }
+android-library = { id = "com.android.library", version.ref = "androidGradlePlugin" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+room = { id = "androidx.room", version.ref = "androidxRoom" }
+#kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+#kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+#kotlin-parcelize = { id = "org.jetbrains.kotlin.plugin.parcelize", version.ref = "kotlin" }
+
+firebase-crashlytics = { id = "com.google.firebase.crashlytics", version.ref = "firebaseCrashlyticsPlugin" }
+google-services = { id = "com.google.gms.google-services", version.ref = "googleServicesPlugin" }
+dagger-hilt = { id = "com.google.dagger.hilt.android", version.ref = "daggerHilt" }
+
+
+# Plugins defined by this project
+telematics-android-application = { id = "telematics.android.application", version = "unspecified" }
+telematics-android-application-firebase = { id = "telematics.android.application.firebase", version = "unspecified" }
+telematics-android-application-flavors = { id = "telematics.android.application.flavors", version = "unspecified" }
+telematics-android-feature = { id = "telematics.android.feature", version = "unspecified" }
+telematics-android-hilt = { id = "telematics.android.hilt", version = "unspecified" }
+telematics-android-library = { id = "telematics.android.library", version = "unspecified" }
+telematics-android-retrofit = { id = "telematics.android.retrofit", version = "unspecified" }
+telematics-android-room = { id = "telematics.android.room", version = "unspecified" }

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:background="@color/design_light_black_90">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:navigationIcon="@drawable/ic_back"
+        app:title="@string/nav_item_settings"
+        app:titleTextAppearance="@style/app_toolbar"
+        app:titleTextColor="@color/design_white"
+        tools:theme="@style/AppTheme" />
+
+    <!-- Items  -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/neutral_white"
+        android:paddingBottom="24dp">
+
+        <!-- Menu items -->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/settingsMenuContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:orientation="vertical">
+
+            <com.telematics.features.settings.view.SettingsItemLayout
+                android:id="@+id/settingsOBD"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:icon="@drawable/ic_sett_ridehailing"
+                android:visibility="gone"
+                android:text="@string/dashboard_settings_obd" />
+
+            <!--Measure-->
+            <com.telematics.features.settings.view.SettingsItemLayout
+                android:id="@+id/settingsMeasures"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:icon="@drawable/ic_sett_measure_large"
+                android:text="@string/dashboard_settings_measures" />
+
+            <com.telematics.features.settings.view.SettingsItemLayout
+                android:id="@+id/settingsCompanyID"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:icon="@drawable/ic_settings_company_id"
+                android:text="@string/dashboard_settings_company_id" />
+
+            <com.telematics.features.settings.view.SettingsItemLayout
+                android:id="@+id/settingsDriverLogbook"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:icon="@drawable/ic_logbook"
+                android:text="@string/logbook_title" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="16dp"
+                android:background="@color/color_gray" />
+
+            <com.telematics.features.settings.view.SettingsItemLayout
+                android:id="@+id/settingsPrivacy"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:icon="@drawable/ic_sett_privacy"
+                android:text="@string/dashboard_settings_privacy" />
+
+            <com.telematics.features.settings.view.SettingsItemLayout
+                android:id="@+id/settingsTerms"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:icon="@drawable/ic_sett_terms"
+                android:text="@string/dashboard_settings_terms" />
+
+            <com.telematics.features.settings.view.SettingsItemLayout
+                android:id="@+id/settingsRate"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:icon="@drawable/ic_sett_rate"
+                android:text="@string/dashboard_settings_rate" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="16dp"
+                android:background="@color/color_gray" />
+
+            <com.telematics.features.settings.view.SettingsItemLayout
+                android:id="@+id/settingsLogout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/logout"
+                android:textColor="@color/colorRedButton" />
+
+            <TextView
+                android:id="@+id/version"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/color_gray"
+                android:visibility="gone"
+                tools:text="v1.0.0.1000"
+                tools:visibility="visible" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </ScrollView>
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="clearEnabled" format="boolean" />
+
+    <declare-styleable name="ProfileCardLayout">
+        <attr name="android:text" />
+        <attr name="android:hint" />
+        <attr name="android:icon" />
+        <attr name="tint" />
+        <attr name="clearEnabled" />
+    </declare-styleable>
+
+    <declare-styleable name="ProfileTextInputLayout">
+        <attr name="android:text" />
+        <attr name="android:hint" />
+        <attr name="android:maxLength" />
+        <attr name="android:imeOptions" />
+        <attr name="android:inputType" />
+        <attr name="android:icon" />
+        <attr name="tint" />
+        <attr name="clearEnabled" />
+    </declare-styleable>
+
+    <declare-styleable name="ProfilePhoneInputLayout">
+        <attr name="android:text" />
+        <attr name="android:hint" />
+        <attr name="android:maxLength" />
+        <attr name="android:imeOptions" />
+        <attr name="android:inputType" />
+        <attr name="android:icon" />
+        <attr name="tint" />
+        <attr name="clearEnabled" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/onBoardingPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@id/onboarding_next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <me.relex.circleindicator.CircleIndicator3
+        android:id="@+id/onBoardingPagesIndicator"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_gravity="bottom|center_horizontal"
+        app:ci_drawable="@drawable/ic_onboarding_indicator"
+        app:ci_drawable_unselected="@drawable/ic_slide_dot_unchecked"
+        app:layout_constraintBottom_toBottomOf="@id/onboarding_next"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/onboarding_next"
+        app:layout_constraintWidth_percent="0.3" />
+
+    <Button
+        android:id="@+id/onboarding_next"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:layout_marginBottom="36dp"
+        android:background="@drawable/ic_onboarding_next"
+        android:drawableEnd="@drawable/ic_onboarding_next_arrow"
+        android:drawablePadding="12dp"
+        android:paddingStart="24dp"
+        android:paddingEnd="20dp"
+        android:text="@string/next"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/onboarding_register"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="36dp"
+        android:background="@drawable/round_rect_blue_button"
+        android:elevation="2dp"
+        android:paddingStart="24dp"
+        android:paddingEnd="20dp"
+        android:text="@string/sign_up_at"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

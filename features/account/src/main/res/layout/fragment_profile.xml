@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:background="@color/design_light_black_90">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:navigationIcon="@drawable/ic_back"
+            app:title="@string/edit_profile_title"
+            app:titleTextAppearance="@style/app_toolbar"
+            app:titleTextColor="@color/design_white"
+            tools:theme="@style/AppTheme" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/design_white"
+            android:orientation="vertical">
+
+            <androidx.core.widget.NestedScrollView
+                android:id="@+id/accountWizardProfileScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:paddingTop="20dp"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="16dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <com.telematics.features.account.view.ProfileTextInputLayout
+                        android:id="@+id/first_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/change_profile_first_name_hint"
+                        android:icon="@drawable/ic_wizard_user"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:maxLength="100" />
+
+                    <com.telematics.features.account.view.ProfileTextInputLayout
+                        android:id="@+id/last_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/change_profile_last_name_hint"
+                        android:icon="@drawable/ic_wizard_user"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:maxLength="100" />
+
+                    <com.telematics.features.account.view.ProfilePhoneInputLayout
+                        android:id="@+id/phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/change_profile_phone_number_hint"
+                        android:icon="@drawable/ic_phone_call"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:maxLength="20"
+                        app:tint="@color/color_gray" />
+
+                    <com.telematics.features.account.view.ProfileCardLayout
+                        android:id="@+id/date_of_birth"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:hint="@string/change_profile_birth_date_hint"
+                        android:icon="@drawable/ic_calendar"
+                        android:maxLength="100"
+                        app:clearEnabled="true"
+                        app:tint="@color/color_gray" />
+
+                    <com.telematics.features.account.view.ProfileTextInputLayout
+                        android:id="@+id/client_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/change_profile_client_id_hint"
+                        android:icon="@drawable/ic_card"
+                        android:imeOptions="actionGo"
+                        android:inputType="textCapCharacters"
+                        android:maxLength="100"
+                        app:tint="@color/color_gray" />
+
+                </LinearLayout>
+
+            </androidx.core.widget.NestedScrollView>
+
+            <Button
+                android:id="@+id/accountWizardSaveBtn"
+                style="@style/Button"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/acc_wizard_btn_margin_top"
+                android:layout_marginBottom="@dimen/acc_wizard_btn_margin_top"
+                android:enabled="true"
+                android:paddingHorizontal="48dp"
+                android:text="@string/acc_wizard_btn_save" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <com.telematics.core.common.view.ProgressIndicator
+        android:id="@+id/progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+</FrameLayout>

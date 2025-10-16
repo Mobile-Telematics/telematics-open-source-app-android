@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:background="@drawable/bg_card"
+    tools:paddingHorizontal="16dp"
+    tools:paddingVertical="16dp"
+    tools:parentTag="androidx.constraintlayout.widget.ConstraintLayout">
+
+    <TextView
+        android:id="@+id/trips_value"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:ellipsize="end"
+        android:fontFamily="@font/open_sans_semibold_600"
+        android:gravity="center_horizontal"
+        android:maxLines="1"
+        android:textColor="@color/design_blue"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_one"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="478" />
+
+    <TextView
+        android:id="@+id/trips_title"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:ellipsize="end"
+        android:fontFamily="@font/open_sans_regular_400"
+        android:gravity="center_horizontal"
+        android:maxLines="1"
+        android:text="@string/dashboard_trips"
+        android:textColor="@color/design_dark_grey"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_one"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/trips_value" />
+
+    <TextView
+        android:id="@+id/mileage_value"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:ellipsize="end"
+        android:fontFamily="@font/open_sans_semibold_600"
+        android:gravity="center_horizontal"
+        android:maxLines="1"
+        android:textColor="@color/design_blue"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_two"
+        app:layout_constraintStart_toEndOf="@+id/guideline_one"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="8734" />
+
+    <TextView
+        android:id="@+id/mileage_title"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:ellipsize="end"
+        android:fontFamily="@font/open_sans_regular_400"
+        android:gravity="center_horizontal"
+        android:maxLines="1"
+        android:text="@string/dashboard_mileage"
+        android:textColor="@color/design_dark_grey"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_two"
+        app:layout_constraintStart_toEndOf="@+id/guideline_one"
+        app:layout_constraintTop_toBottomOf="@+id/mileage_value" />
+
+    <TextView
+        android:id="@+id/hours_value"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:ellipsize="end"
+        android:fontFamily="@font/open_sans_semibold_600"
+        android:gravity="center_horizontal"
+        android:maxLines="1"
+        android:textColor="@color/design_blue"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/guideline_two"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="178" />
+
+    <TextView
+        android:id="@+id/hours_title"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:ellipsize="end"
+        android:fontFamily="@font/open_sans_regular_400"
+        android:gravity="center_horizontal"
+        android:maxLines="1"
+        android:text="@string/dashboard_hours"
+        android:textColor="@color/design_dark_grey"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/guideline_two"
+        app:layout_constraintTop_toBottomOf="@+id/hours_value" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.33" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.66" />
+
+    <View
+        android:id="@+id/divider_one"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:background="@color/design_grey_stroke"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline_one"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider_two"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:background="@color/design_grey_stroke"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline_two"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</merge>

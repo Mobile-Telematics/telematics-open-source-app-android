@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TripRecordMode">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:gravity">start|center_vertical</item>
+        <item name="android:button">@drawable/rb_trip_record_mode_sel</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:paddingStart">8dp</item>
+        <item name="android:textColor">@color/design_black</item>
+        <item name="fontFamily">@font/open_sans_semibold_600</item>
+    </style>
+</resources>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:layout_gravity="center"
+    android:layout_marginStart="@dimen/acc_wizard_document_bubble_margin"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="@dimen/acc_wizard_document_bubble_margin"
+    android:layout_marginBottom="32dp"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:visibility="visible"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="10dp"
+    app:contentPadding="16dp">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/accountVehicleAddIcon"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@drawable/ic_dot_orange"
+            android:backgroundTint="@color/color_orange"
+            android:padding="@dimen/acc_wizard_document_add_button_padding"
+            android:src="@drawable/ic_wizard_plus" />
+
+        <TextView
+            android:id="@+id/accountVehicleAddText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/open_sans_bold_700"
+            android:gravity="start"
+            android:text="@string/account_add_profile"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/acc_wizard_document_upload_text_size" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ObdStepTitle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">56dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/neutral_white</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/open_sans_bold_700</item>
+    </style>
+</resources>

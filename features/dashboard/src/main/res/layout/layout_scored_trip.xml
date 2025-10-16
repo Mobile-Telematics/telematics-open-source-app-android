@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:background="@drawable/bg_card"
+    tools:padding="16dp"
+    tools:parentTag="androidx.constraintlayout.widget.ConstraintLayout">
+
+    <ImageView
+        android:id="@+id/trip_type_img"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:background="@drawable/ic_trip_type_background"
+        android:padding="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription"
+        tools:src="@drawable/ic_event_trip_bubble_driver" />
+
+    <TextView
+        android:id="@+id/trip_type_name"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="8dp"
+        android:ellipsize="end"
+        android:fontFamily="@font/open_sans_bold_700"
+        android:gravity="start|center"
+        android:maxLines="1"
+        android:textColor="@color/design_black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/trip_type_img"
+        app:layout_constraintEnd_toStartOf="@+id/distance_value"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toEndOf="@+id/trip_type_img"
+        app:layout_constraintTop_toTopOf="@+id/trip_type_img"
+        tools:text="@string/progress_trip_type_driver" />
+
+    <!-- Distance -->
+    <TextView
+        android:id="@+id/distance_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:ellipsize="end"
+        android:fontFamily="@font/open_sans_bold_700"
+        android:gravity="center"
+        android:maxLines="1"
+        android:textColor="@color/design_black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/trip_type_img"
+        app:layout_constraintEnd_toStartOf="@+id/distance_name"
+        app:layout_constraintStart_toEndOf="@+id/trip_type_name"
+        app:layout_constraintTop_toTopOf="@+id/trip_type_img"
+        tools:text="24" />
+
+    <TextView
+        android:id="@+id/distance_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:fontFamily="@font/open_sans_bold_700"
+        android:gravity="center"
+        android:maxLines="1"
+        android:textColor="@color/design_black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/trip_type_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/distance_value"
+        app:layout_constraintTop_toTopOf="@+id/trip_type_img"
+        tools:text="km" />
+
+    <!-- Start Date -->
+    <ImageView
+        android:id="@+id/start_points_img"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:src="@drawable/ic_trip_start_point"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/trip_type_img"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/start_date_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:ellipsize="end"
+        android:fontFamily="@font/open_sans_semibold_600"
+        android:maxLines="1"
+        android:textColor="@color/design_dark_grey"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/start_points_img"
+        app:layout_constraintStart_toEndOf="@+id/start_points_img"
+        app:layout_constraintTop_toTopOf="@+id/start_points_img"
+        tools:text="03.09, 08:50" />
+
+    <View
+        android:id="@+id/start_divider"
+        android:layout_width="1dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="8dp"
+        android:background="@color/design_grey"
+        app:layout_constraintBottom_toBottomOf="@+id/start_points_img"
+        app:layout_constraintStart_toEndOf="@+id/start_date_value"
+        app:layout_constraintTop_toTopOf="@+id/start_points_img" />
+
+    <TextView
+        android:id="@+id/start_city"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:ellipsize="end"
+        android:fontFamily="@font/open_sans_regular_400"
+        android:maxLines="1"
+        android:textColor="@color/design_dark_grey"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/start_points_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/start_divider"
+        app:layout_constraintTop_toTopOf="@+id/start_points_img"
+        tools:text="Lisboa, Lisbon" />
+
+    <!-- End Date -->
+    <ImageView
+        android:id="@+id/end_points_img"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:src="@drawable/ic_trip_end_point"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/start_points_img"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/end_date_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:ellipsize="end"
+        android:fontFamily="@font/open_sans_semibold_600"
+        android:maxLines="1"
+        android:textColor="@color/design_dark_grey"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/end_points_img"
+        app:layout_constraintStart_toEndOf="@+id/end_points_img"
+        app:layout_constraintTop_toTopOf="@+id/end_points_img"
+        tools:text="03.09, 09:00" />
+
+    <View
+        android:id="@+id/end_divider"
+        android:layout_width="1dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="8dp"
+        android:background="@color/design_grey"
+        app:layout_constraintBottom_toBottomOf="@+id/end_points_img"
+        app:layout_constraintStart_toEndOf="@+id/end_date_value"
+        app:layout_constraintTop_toTopOf="@+id/end_points_img" />
+
+    <TextView
+        android:id="@+id/end_city"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:ellipsize="end"
+        android:fontFamily="@font/open_sans_regular_400"
+        android:maxLines="1"
+        android:textColor="@color/design_dark_grey"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/end_points_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/end_divider"
+        app:layout_constraintTop_toTopOf="@+id/end_points_img"
+        tools:text="Lisboa, Lisbon" />
+
+</merge>

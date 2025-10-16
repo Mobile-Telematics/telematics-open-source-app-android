@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tripDetailsContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorMapBackground">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/tripDetailsContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/tripDetails"
+            layout="@layout/fragment_trip_details_map" />
+
+        <ImageView
+            android:id="@+id/prevArrow"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center|start"
+            android:layout_marginStart="16dp"
+            app:srcCompat="@drawable/ic_back"
+            app:tint="#A3A3A3" />
+
+        <ImageView
+            android:id="@+id/nextArrow"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="end|center"
+            android:layout_marginEnd="16dp"
+            app:srcCompat="@drawable/ic_next"
+            app:tint="#A3A3A3" />
+
+        <include
+            android:id="@+id/tripDetailsBottomSheet"
+            layout="@layout/fragment_trip_details_bottom_sheet" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/design_light_black_90"
+        app:navigationIcon="@drawable/ic_back"
+        app:title="@string/trip_details_title"
+        app:titleTextAppearance="@style/app_toolbar"
+        app:titleTextColor="@color/design_white"
+        tools:theme="@style/AppTheme" />
+
+    <!-- Loading view -->
+    <FrameLayout
+        android:id="@+id/tripDetailsLoadingView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#1A000000"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:theme="@style/MapProgressBarTheme" />
+
+    </FrameLayout>
+
+
+</FrameLayout>

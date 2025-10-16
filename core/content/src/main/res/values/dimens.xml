@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Overrided SDK resources -->
+    <dimen name="dialog_telematics_view_bubble_corners">20dp</dimen>
+    <dimen name="dialog_telematics_button_corners">35dp</dimen>
+
+    <!-- Buttons -->
+
+    <!-- Progress Buttons -->
+    <dimen name="round_progressbtn_height">24.3dp</dimen>
+
+    <!-- Custom Dialog -->
+    <dimen name="dialog_view_bubble_corners">20dp</dimen>
+
+    <!-- No buttons Dialog -->
+
+    <!-- Zerro layout -->
+
+    <!-- Splash -->
+
+    <!-- On boarding-->
+    <dimen name="slide_button_width">108dp</dimen>
+
+    <!-- Login Zen  -->
+
+    <!-- Welcomeback  -->
+    <dimen name="welcomeback_button_width">123.3dp</dimen>
+
+    <!-- Feed Events Content Zen -->
+
+    <dimen name="feed_event_scroll_layout_margin_bottom">12dp</dimen>
+    <dimen name="feed_event_bubble_layout_margin_side">16dp</dimen>
+    <dimen name="feed_event_bubble_margin_top">14dp</dimen>
+    <dimen name="feed_event_bubble_label_margin_top">4dp</dimen>
+    <dimen name="feed_event_bubble_label_margin_start">33.3dp</dimen>
+    <dimen name="feed_event_bubble_label_padding_top">2dp</dimen>
+    <dimen name="feed_event_bubble_label_padding_bottom">2dp</dimen>
+    <dimen name="feed_event_bubble_label_padding_start">18dp</dimen>
+    <dimen name="feed_event_bubble_label_padding_end">18dp</dimen>
+    <dimen name="feed_event_bubble_label_text_size">12sp</dimen>
+    <dimen name="feed_event_bubble_content_margin_side">13dp</dimen>
+    <dimen name="feed_event_bubble_details_button_width">21.3dp</dimen>
+
+    <dimen name="feed_event_hidden_buttons_margin_top">12dp</dimen>
+    <dimen name="feed_event_hidden_button_size">40dp</dimen>
+
+    <dimen name="feed_event_trip_info_text_margin_top">20dp</dimen>
+    <dimen name="feed_event_trip_info_text_text_size">12sp</dimen>
+    <dimen name="feed_event_trip_points_details_margin_top">10dp</dimen>
+    <dimen name="feed_event_trip_points_details_margin_bottom">10dp</dimen>
+    <dimen name="feed_event_trip_start_point_width">10dp</dimen>
+    <dimen name="feed_event_trip_start_point_height">10dp</dimen>
+    <dimen name="feed_event_trip_end_point_width">10dp</dimen>
+    <dimen name="feed_event_trip_end_point_height">10dp</dimen>
+    <dimen name="feed_event_trip_address_text_size">11.5sp</dimen>
+    <dimen name="feed_event_trip_address_padding_start">9dp</dimen>
+    <dimen name="feed_event_trip_score_label_text_size">12sp</dimen>
+    <dimen name="feed_event_trip_type_switcher_text_size">12.4sp</dimen>
+
+    <!-- Trip Details Content Zen -->
+    <dimen name="trip_details_round_button_icon_size">34dp</dimen>
+    <dimen name="trip_details_point_icon_size">30dp</dimen>
+    <dimen name="trip_details_point_icon_text_size">16sp</dimen>
+    <dimen name="trip_details_dot_view_width">50dp</dimen>
+    <dimen name="trip_details_dot_icon_size">10dp</dimen>
+    <dimen name="trip_details_point_text_size">14sp</dimen>
+    <dimen name="trip_details_score_text_size">13sp</dimen>
+    <dimen name="trip_details_info_margin_left">15dp</dimen>
+    <dimen name="trip_details_info_margin_right">25dp</dimen>
+    <dimen name="trip_details_info_margin_top">5dp</dimen>
+    <dimen name="trip_details_info_margin_bottom">10dp</dimen>
+
+    <!-- Dashboard Content Zen -->
+    <dimen name="dash_user_bar_margin_side">17dp</dimen>
+    <dimen name="dash_user_bar_margin_top">14dp</dimen>
+    <dimen name="dash_user_bar_avatar_size">50dp</dimen>
+    <dimen name="dash_user_bar_name_margin_start">13.3dp</dimen>
+    <dimen name="dash_user_bar_icon_size">32dp</dimen>
+    <dimen name="dash_user_bar_icon_padding">5dp</dimen>
+    <dimen name="dash_user_bar_icon_margin_side">3dp</dimen>
+
+    <!-- Dashboard Tab Score Item -->
+
+    <!-- Eco/Safety Driving Content -->
+
+    <!-- Eco/Safety Driving ProgressBar Item -->
+
+    <!-- Eco/Safety Driving Hint Item -->
+
+    <!-- Eco/Safety Driving Delta Percent Item -->
+
+    <!-- Eco/Safety Driving My Activity Tab area -->
+
+    <!-- Eco/Safety Driving My Activity Content area -->
+
+    <!-- Eco/Safety Driving My Activity Content Item -->
+
+    <!-- Dashboard Discount Content -->
+
+    <!-- Dashboard Discount Item -->
+
+    <!-- Dashboard HUB Content Zen -->
+
+    <dimen name="dash_hub_bottom_tab_height">38dp</dimen>
+
+    <!-- Dashboard HUB Tab Mileage Progress Item -->
+
+    <!-- Dashboard HUB Tab Score Item -->
+
+    <!-- Dashboard HUB Tab Telematics Item -->
+
+    <!-- Dashboard HUB Tab Balance Item -->
+
+    <!-- Dashboard HUB New Challenge Item -->
+
+    <!-- Dashboard HUB Active Challenge Item -->
+
+    <!-- Dashboard HUB Pager Item -->
+
+    <!-- Dashboard HUB Leaderboard Item -->
+
+    <!-- App Settings-->
+    <dimen name="app_settings_toolbar_text_size">14sp</dimen>
+    <dimen name="app_settings_menu_item_padding_side">25.3dp</dimen>
+
+    <!-- Change Pass Settings-->
+
+    <!-- Networks Content Zen -->
+
+    <!-- Rewards Content Zen -->
+
+    <!-- Rewards Dialog Content Zen -->
+
+    <!-- Rewards Invite Content Zen -->
+    <dimen name="reward_invite_logo_width">250dp</dimen>
+    <dimen name="reward_invite_logo_height">180dp</dimen>
+    <dimen name="reward_invite_info_margin">30dp</dimen>
+    <dimen name="reward_invite_info_text_size">18sp</dimen>
+    <dimen name="reward_invite_info_support_text_size">12sp</dimen>
+    <dimen name="reward_invite_btn_width">135dp</dimen>
+    <dimen name="reward_invite_btn_height">36dp</dimen>
+    <dimen name="reward_invite_btn_margin">20dp</dimen>
+    <dimen name="reward_invite_support_margin">30dp</dimen>
+
+    <!-- Leaderboard item -->
+    <dimen name="leaderboard_item_margin_top">3dp</dimen>
+    <dimen name="leaderboard_item_margin_bottom">3dp</dimen>
+    <dimen name="leaderboard_item_margin_horizontal">15dp</dimen>
+    <dimen name="leaderboard_item_icon_size">31dp</dimen>
+    <dimen name="leaderboard_item_icon_margin_start">5dp</dimen>
+    <dimen name="leaderboard_item_icon_margin_end">5dp</dimen>
+    <dimen name="leaderboard_item_place_text_size">13sp</dimen>
+    <dimen name="leaderboard_item_name_text_size">12sp</dimen>
+    <dimen name="leaderboard_user_item_margin_start">10dp</dimen>
+    <dimen name="leaderboard_user_item_normal_size">70dp</dimen>
+    <dimen name="leaderboard_user_item_type_text_normal">13sp</dimen>
+    <dimen name="leaderboard_user_item_type_text_big">16sp</dimen>
+    <dimen name="leaderboard_user_item_place_text_normal">14sp</dimen>
+    <dimen name="leaderboard_user_item_place_text_big">17sp</dimen>
+
+    <!-- Account -->
+
+    <dimen name="account_list_label_text_size">14sp</dimen>
+
+    <dimen name="account_docs_margin_horizontal">50dp</dimen>
+
+    <!-- Account Dialog Content Zen -->
+    <dimen name="account_dialog_margin_side">20dp</dimen>
+    <dimen name="account_dialog_padding_bottom">30dp</dimen>
+    <dimen name="account_dialog_title_margin_top">15dp</dimen>
+    <dimen name="account_dialog_account_status_text_size">22sp</dimen>
+    <dimen name="account_dialog_account_status_margin_bottom">25dp</dimen>
+
+    <!-- Account Wizard -->
+
+    <dimen name="acc_wizard_input_margin_side">20dp</dimen>
+    <dimen name="acc_wizard_input_margin_bottom">5dp</dimen>
+    <dimen name="acc_wizard_input_padding_bottom">15dp</dimen>
+
+    <dimen name="acc_wizard_next_btn_width">105dp</dimen>
+    <dimen name="acc_wizard_btn_margin_top">15dp</dimen>
+
+    <dimen name="acc_wizard_document_bubble_margin">40dp</dimen>
+    <dimen name="acc_wizard_document_click_area_margin">25dp</dimen>
+    <dimen name="acc_wizard_document_icon_width">40dp</dimen>
+    <dimen name="acc_wizard_document_icon_height">60dp</dimen>
+    <dimen name="acc_wizard_document_info_margin_start">10dp</dimen>
+    <dimen name="acc_wizard_document_upload_text_size">14sp</dimen>
+    <dimen name="acc_wizard_document_arrow_icon_size">15dp</dimen>
+
+    <dimen name="acc_wizard_document_add_button_size">29.3dp</dimen>
+    <dimen name="acc_wizard_document_add_button_padding">8dp</dimen>
+
+    <!-- Padding item decoration -->
+    <dimen name="events_images_dimen">50dp</dimen>
+    <dimen name="trip_details_change_image_size">70dp</dimen>
+
+    <!-- Score explanation -->
+    <dimen name="score_explanation_title_text_size">20sp</dimen>
+    <dimen name="score_explanation_text_size">13sp</dimen>
+    <dimen name="score_explanation_margin">16dp</dimen>
+
+    <!-- Trip Details Dialog Content -->
+    <dimen name="trip_details_dialog_margin">15dp</dimen>
+
+    <dimen name="screen_margin_horizontal_short">16dp</dimen>
+    <dimen name="screen_margin_vertical_midi">16dp</dimen>
+    <dimen name="screen_margin_vertical_regular">24dp</dimen>
+    <dimen name="screen_margin_vertical_long">32dp</dimen>
+
+    <dimen name="dashboard_margin_top_regular">24dp</dimen>
+    <dimen name="dashboard_margin_top_short">16dp</dimen>
+</resources>

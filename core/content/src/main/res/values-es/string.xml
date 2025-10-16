@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="nav_item_trips">Viajes</string>
+    <string name="nav_item_leaders">Líderes</string>
+    <string name="nav_item_dashboard">Panel</string>
+    <string name="nav_item_reward">Recompensas</string>
+    <string name="nav_item_settings">Configuración</string>
+    <string name="nav_item_profile">Perfil</string>
+
+    <!-- Login Screen -->
+    <string name="login_screen_hint_email">Correo electrónico</string>
+    <string name="login_screen_hint_password">Contraseña</string>
+    <string name="sign_in">Iniciar sesión</string>
+    <string name="sign_up">Registrarse</string>
+    <string name="dialog_cancel">CANCELAR</string>
+    <string name="dialog_confirm">OK</string>
+
+    <string name="dialog_new_user">Bienvenido a la aplicación. Detectamos que es tu primer inicio de sesión. Para facilitar el proceso, te hemos enviado un correo electrónico con un enlace para crear tu contraseña.</string>
+    <string name="dialog_no_user">No estás registrado en la app. Regístrate y disfruta de la aplicación.</string>
+    <string name="auth_error_user_exist">Ya existe un usuario con ese correo electrónico</string>
+
+    <string name="sign_in_go_sign_up">¿No tienes una cuenta?</string>
+    <string name="sign_in_end_sign_up">Regístrate</string>
+
+    <string name="sign_un_go_sign_in">¿Ya tienes una cuenta?</string>
+    <string name="sign_up_end_sign_in">Inicia sesión</string>
+
+    <string name="sign_in_new_password">Obtener nueva contraseña</string>
+    <string name="sign_in_new_email">Usar otro correo</string>
+    <string name="dialog_reset_password">¡Correo enviado!\nRevisa tu bandeja de entrada y haz clic en el enlace para restablecer la contraseña.</string>
+
+    <string name="auth_error_invalid_password">La contraseña es incorrecta</string>
+
+    <string name="login_screen_policy">Política de privacidad</string>
+    <string name="login_screen_terms">Términos de uso</string>
+
+    <!-- Perfil -->
+    <string name="logout">Cerrar sesión</string>
+
+    <string name="crop_screen_title">Recortar imagen</string>
+    <string name="crop_screen_done">LISTO</string>
+    <string name="crop_screen_access_denied">Acceso denegado</string>
+
+    <!-- Cuenta -->
+    <string name="acc_wizard_btn_save">Guardar</string>
+    <string name="account_access_permission_msg">Por favor, permite el acceso a la cámara y archivos multimedia</string>
+    <string name="account_my_cars">Mis vehículos</string>
+    <string name="account_add_new_car">Agregar vehículo</string>
+    <string name="account_car_title">Coche</string>
+
+    <!-- Vehículo -->
+    <string name="vehicle_licence_plate">MATRÍCULA</string>
+    <string name="vehicle_vin_number">NÚMERO VIN</string>
+    <string name="vehicle_manufacturer">MARCA</string>
+    <string name="vehicle_model">MODELO</string>
+    <string name="vehicle_car_name">APODO DEL COCHE</string>
+    <string name="acc_wizard_car_year">AÑO DEL COCHE</string>
+    <string name="vehicle_initial_mileage">KILOMETRAJE INICIAL</string>
+
+    <!-- Perfil - asistente de cuenta -->
+    <string name="change_profile_first_name_hint">Nombre</string>
+    <string name="change_profile_last_name_hint">Apellido</string>
+    <string name="change_profile_phone_number_hint">Número de teléfono</string>
+    <string name="change_profile_birth_date_hint">Fecha de nacimiento</string>
+    <string name="change_profile_client_id_hint">ID del cliente</string>
+
+    <string name="retry">Reintentar</string>
+    <string name="dashboard_new_overall_score">Puntuación general</string>
+    <string name="dashboard_new_acceleration_score">Puntuación de aceleración</string>
+    <string name="dashboard_new_braking_score">Puntuación de frenado</string>
+    <string name="dashboard_new_phone_dist_score">Puntuación de distracción</string>
+    <string name="dashboard_new_speeding_score">Puntuación de velocidad</string>
+    <string name="dashboard_new_cornering_score">Puntuación en curvas</string>
+    <string name="dashboard_new_points">puntos</string>
+    <string name="dashboard_new_km">km</string>
+    <string name="dashboard_new_mi">mi</string>
+    <string name="dashboard_new_hours">horas</string>
+    <string name="trip_details_thanks">¡Gracias, hemos recibido\ntu comentario!</string>
+    <string name="trip_details_error">Tu conexión a internet es inestable.\nPor favor, inténtalo de nuevo más tarde.</string>
+    <string name="trip_details_claim">Reclamar</string>
+    <string name="trip_details_review">Revisar</string>
+    <string name="trip_details_there_was_no_event_here">NO hubo evento aquí:</string>
+    <string name="trip_details_there_was_another_event_here">Hubo otro evento aquí:</string>
+
+    <string name="common_time_in_hm_format">%1$d:%2$02d</string>
+
+    <!-- Errores de autorización -->
+    <string name="server_error_something_went_wrong">Algo salió mal. Inténtalo de nuevo más tarde.</string>
+    <string name="auth_error_network">Verifica tu conexión a internet</string>
+    <string name="auth_error_empty_email">El campo de correo debe estar lleno</string>
+    <string name="auth_error_incorrect_email">El correo electrónico no es válido</string>
+    <string name="auth_error_empty_password">El campo de contraseña debe estar lleno</string>
+    <string name="auth_error_short_password">La contraseña debe tener al menos %d caracteres</string>
+
+    <string name="dashboard_eco_fuel">Combustible</string>
+    <string name="dashboard_eco_tyres">Neumáticos</string>
+    <string name="dashboard_eco_brakes">Frenos</string>
+    <string name="dashboard_eco_cost">Costo de propiedad</string>
+
+    <!-- Tipos de viaje -->
+    <string name="progress_trip_type_driver">Conductor</string>
+    <string name="progress_trip_type_passenger">Pasajero</string>
+    <string name="progress_trip_type_bus">Autobús</string>
+    <string name="progress_trip_type_motorcycle">Motocicleta</string>
+    <string name="progress_trip_type_train">Tren</string>
+    <string name="progress_trip_type_taxi">Taxi</string>
+    <string name="progress_trip_type_bicycle">Bicicleta</string>
+    <string name="progress_trip_type_other">Otro</string>
+    <string name="progress_trip">Viaje</string>
+    <string name="dialog_events_delete_trip">¿Eliminar este viaje?</string>
+    <string name="dialog_events_hide_trip">¿Ocultar este viaje?</string>
+    <string name="are_you_sure">¿Estás seguro?</string>
+    <string name="dialog_yes">SÍ</string>
+    <string name="dialog_no">NO</string>
+    <string name="progress_event_trip">Viaje</string>
+
+    <string name="none">Ninguno</string>
+    <string name="personal">Personal</string>
+    <string name="business">Negocios</string>
+
+    <!-- Configuración -->
+    <string name="dashboard_settings_my_profile">Mi perfil</string>
+    <string name="dashboard_settings_obd">Conectar dispositivo OBD</string>
+    <string name="dashboard_settings_privacy">Política de privacidad</string>
+    <string name="dashboard_settings_terms">Términos de uso</string>
+    <string name="dashboard_settings_rate">Califica nuestra app</string>
+    <string name="nav_logout_question">¿Cerrar sesión?</string>
+    <string name="nav_logout_yes">cerrar sesión</string>
+    <string name="nav_logout_no">no</string>
+
+    <!-- ID de empresa -->
+    <string name="if_you_have_a_company_invitation_code">Si tienes un código de invitación de empresa, ingrésalo abajo.</string>
+    <string name="dashboard_settings_company_id">Unirse a una empresa</string>
+    <string name="invite_code">Código de invitación</string>
+    <string name="company_screen_join">UNIRSE</string>
+    <string name="dashboard_settings_company_id_success">Te has unido exitosamente a %1$s</string>
+    <string name="company_screen_invalid_code">El código de invitación no es válido</string>
+
+    <!-- Medidas -->
+    <string name="dashboard_settings_measures">Medidas</string>
+    <string name="settings_measure_distance">Distancia</string>
+    <string name="settings_measure_km">km</string>
+    <string name="settings_measure_mi">mi</string>
+    <string name="settings_measure_date_format">Formato de fecha</string>
+    <string name="settings_measure_dd_mm_yyy">dd/mm</string>
+    <string name="settings_measure_mm_dd_yyy">mm/dd</string>
+    <string name="settings_measure_time_format">Formato de hora</string>
+    <string name="settings_measure_24h">24h</string>
+    <string name="settings_measure_12h">12h</string>
+    <string name="settings_measure_map_scheme">Esquema de mapa</string>
+    <string name="settings_measure_map_dark">oscuro</string>
+    <string name="settings_measure_map_light">claro</string>
+
+    <!-- Detalles del viaje -->
+    <string name="trip_details_title">Detalles del viaje</string>
+    <string name="trip_details_swipe_up_for_details">Desliza hacia arriba para ver detalles</string>
+    <string name="trip_details_point_a">A</string>
+    <string name="trip_details_point_b">B</string>
+    <string name="trip_details_acceleration_score">Puntuación de aceleración</string>
+    <string name="trip_details_braking_score">Puntuación de frenado</string>
+    <string name="trip_details_phone_dist_score">Puntuación de distracción</string>
+    <string name="trip_details_speeding_score">Puntuación de velocidad</string>
+    <string name="trip_details_cornering_score">Puntuación en curvas</string>
+    <string name="trip_details_km_h">Velocidad: %1$s km/h</string>
+    <string name="trip_details_mi_h">Velocidad: %1$s mi/h</string>
+    <string name="trip_details_max_force">Fuerza máxima: %1$s m/s²</string>
+    <string name="trip_details_braking">Frenado</string>
+    <string name="trip_details_acceleration">Aceleración</string>
+    <string name="trip_details_cornering">Curvas</string>
+    <string name="trip_details_phone_usage">Uso del teléfono</string>
+    <string name="trip_type_dialog_title">Rol del viaje</string>
+    <string name="trip_type_dialog_header">Por favor, selecciona tu rol en el viaje</string>
+    <string name="something_went_wrong">Algo salió mal</string>
+
+    <!-- Clasificación -->
+    <string name="leaderboard_keep_driving">¡Sigue conduciendo!\nLa clasificación aparecerá pronto</string>
+    <string name="leaderboard_statistics">Estadísticas</string>
+    <string name="leaderboard_mileage">Kilometraje</string>
+    <string name="leaderboard_rate">Puntuación de seguridad</string>
+    <string name="leaderboard_acceleration">Aceleración</string>
+    <string name="leaderboard_deceleration">Frenado</string>
+    <string name="leaderboard_distraction">Distracción</string>
+    <string name="leaderboard_speeding">Velocidad</string>
+    <string name="leaderboard_turn">Curvas</string>
+    <string name="leaderboard_time_driven">Tiempo</string>
+    <string name="leaderboard_total_trips">Total de viajes</string>
+    <string name="leaderboard_full_name">NOMBRE COMPLETO</string>
+    <string name="leaderboard_details_title">Clasificación</string>
+
+    <!-- Recompensas -->
+    <string name="rewards_invite_info">¡Estás por ganar\nalgunas <b>DriveCoins!</b></string>
+    <string name="drive_coins_title">DriveCoins</string>
+    <string name="streaks_title">Rachas</string>
+    <string name="rewards_invite_start">INICIAR</string>
+    <string name="rewards_invite_support"><u>Soporte</u></string>
+    <string name="earned_coins_title">Monedas obtenidas</string>
+    <string name="daily_limit_placeholder">— — — Límite diario: %1$s</string>
+    <string name="all_time_tab_title">Todo el tiempo</string>
+    <string name="day_tab_title">Día</string>
+    <string name="this_month_tab_title">Este mes</string>
+    <string name="last_month_tab_title">Mes pasado</string>
+    <string name="distance_title">Kilometraje</string>
+    <string name="duration_title">Tiempo</string>
+    <string name="accelerations_title">Aceleraciones</string>
+    <string name="brakings_title">Frenadas</string>
+    <string name="cornerings">Curvas</string>
+    <string name="phone_usage_title">Uso del teléfono</string>
+    <string name="speeding_title">Velocidad</string>
+    <string name="risk_score_title">Índice de seguridad</string>
+    <string name="trips_title">Viajes</string>
+    <string name="coins_total_title">Total de monedas</string>
+    <string name="leaf_text">Hoja</string>
+    <string name="eco_score_text">Puntuación ecológica</string>
+    <string name="brakes_title">Frenos</string>
+    <string name="fuel_title">Combustible</string>
+    <string name="tyres_title">Neumáticos</string>
+    <string name="aquired_coins_info">Monedas ganadas antes de aplicar el límite diario</string>
+    <string name="cost_of_ownership_title">Costo de propiedad</string>
+    <string name="current_title_text">Actual:</string>
+    <string name="trips_title_card">viajes</string>
+    <string name="acceleration_card_title">Viajes sin aceleraciones bruscas</string>
+    <string name="braking_card_title">Viajes sin frenadas bruscas</string>
+    <string name="speeding_card_title">Viajes sin exceso de velocidad</string>
+    <string name="distraction_card_title">Viajes sin distracción</string>
+    <string name="cornering_card_title">Viajes sin giros bruscos</string>
+    <string name="phone_card_title">Viajes sin uso del teléfono</string>
+    <string name="current_duration_placeholder">Aún no tienes una racha actual</string>
+    <string name="best_duration_placeholder">Aún no tienes una mejor racha</string>
+    <string name="best_block_title">Mejor:</string>
+    <string name="travelling">Viajando</string>
+    <string name="safe_driving">Conducción Segura</string>
+    <string name="eco_driving">Conducción Ecológica</string>
+
+    <!--ERRORS-->
+    <string name="server_error_error">El servicio no está disponible temporalmente.</string>
+    <string name="link_open_error">No se puede abrir el enlace.</string>
+
+    <!--OBD-->
+    <string name="obd_select_vehicle_title">Seleccionar vehículo</string>
+    <string name="odb_step_1">PASO <b>1</b></string>
+    <string name="odb_step_2">PASO <b>2</b></string>
+    <string name="odb_step_3">PASO <b>3</b></string>
+    <string name="odb_install_your_device">Instala tu dispositivo</string>
+    <string name="odb_connect_the_device_to_the_can_port">Conecta el dispositivo al puerto CAN\nde tu vehículo. Normalmente está\nubicado debajo del tablero, junto al\nvolante.</string>
+    <string name="odb_can_t_find_the_can">¿No puedes encontrar el\npuerto CAN en tu coche?</string>
+    <string name="odb_turn_on_your_vehicle">Enciende tu vehículo</string>
+    <string name="odb_start_your_engine_to_power_on_your_device">Enciende el motor para activar el dispositivo.</string>
+    <string name="odb_take_a_photo_of_your_odometer">Toma una foto del odómetro</string>
+    <string name="odb_the_photo_will_show_the_odometer">La foto mostrará el kilometraje\nal inicio de tu póliza.</string>
+    <string name="odb_prepare_the_device_for_pairing">Prepara el dispositivo para emparejar</string>
+    <string name="odb_make_sure_the_device_in">Asegúrate de que el dispositivo esté\nconectado al puerto CAN.</string>
+    <string name="odb_turn_on_bluetooth">Activa el Bluetooth</string>
+    <string name="odb_to_continue_please_enable_bluetooth">Para continuar, activa el Bluetooth en\nla configuración o el centro de control.</string>
+    <string name="odb_search">BUSCAR</string>
+    <string name="odb_oops_we_couldnt">¡Ups! No pudimos\nconectarnos a tu dispositivo.</string>
+    <string name="odb_we_can_t_find_your_device">No podemos encontrar tu dispositivo.\nAsegúrate de que:</string>
+    <string name="odb_tips">- El motor está encendido\n\n\n- El dispositivo está instalado y con luz roja\n\n\n- El Bluetooth del móvil está encendido\n\n\n- El dispositivo ya está emparejado</string>
+    <string name="odb_try_again">INTENTAR DE NUEVO</string>
+    <string name="odb_unfortunately_car_not_supported">Desafortunadamente,\ntu coche no es compatible</string>
+    <string name="odb_if_your_car_model">Si tu coche fue fabricado\nantes de 1996, el dispositivo\nno lo soportará.</string>
+    <string name="odb_give_us_a_call_at">Llámanos al:</string>
+    <string name="odb_1_300_824_227">1 300 824 227</string>
+    <string name="odb_chat_with_us">o chatea con nosotros desde la app</string>
+    <string name="quit">SALIR</string>
+    <string name="odb_successfully_paired">Emparejado\ncorrectamente</string>
+    <string name="odb_congratulations_nyour_device_is_now_ready">¡Felicidades!\n¡Tu dispositivo está listo!</string>
+    <string name="odb_device_number">Número de dispositivo: %1$s</string>
+    <string name="odb_policy_number">Número de póliza: %1$s</string>
+    <string name="next">Siguiente</string>
+    <string name="sign_up_at">Registrarse</string>
+    <string name="odb_we_found_these_devices">Encontramos estos dispositivos</string>
+    <string name="odb_please_select_the_device">Selecciona el dispositivo que deseas\nvincular a tu póliza.</string>
+    <string name="odb_can_t_see_your_device_listed">¿No ves tu dispositivo en la lista?\nInténtalo de nuevo.</string>
+    <string name="odb_looking_for_a_device">Buscando dispositivo</string>
+    <string name="odb_please_wait_while_we_search_for_your_device">Espera mientras buscamos tu dispositivo. Esto puede tardar hasta un minuto.</string>
+    <string name="odb_once_we_find_it">Cuando lo encontremos, serás redirigido automáticamente a la siguiente página.</string>
+    <string name="obd_select_the_vehicle">Selecciona el vehículo donde vas a instalar el\ndispositivo, de la lista o añade uno nuevo.</string>
+    <string name="obd_your_vehicles">Tus vehículos</string>
+    <string name="odb_confirm">CONFIRMAR</string>
+    <string name="odb_would_you_like_to_use_this_photo">¿Deseas usar esta foto?</string>
+    <string name="obd_internet_error">Tu conexión a internet es inestable.</string>
+    <string name="obd_taking_too_long">¿Está tardando demasiado?</string>
+    <string name="obd_finish">FINALIZAR</string>
+    <string name="obd_no_vehicles_error">Tu lista de coches está vacía</string>
+    <string name="obd_device_activated">Dispositivo activado</string>
+    <string name="obd_car_last_session_min">Conectado (hace %dm)</string>
+    <string name="obd_car_last_session_hours">Conectado (hace %dh)</string>
+    <string name="obd_car_last_session_days">Conectado (hace %dd)</string>
+    <string name="obd_car_last_session_never">No conectado</string>
+    <string name="obd_search">Buscar</string>
+    <string name="obd_help_link">http://help.telematicssdk.com/en/articles/4170881-obd-settings</string>
+    <string name="obd_ble_error">Tus dispositivos no son compatibles con BLE</string>
+
+    <!-- SDK Utils -->
+    <string name="dialog_sdk_persistent_notification_instructions">Para un funcionamiento óptimo de la aplicación, se muestra una notificación persistente. Si lo prefieres, desactívala sin afectar el rendimiento tocando Configuración.\nGracias por tu comprensión.</string>
+    <string name="dialog_sdk_persistent_notification_title">Recordatorio de Notificación</string>
+    <string name="dialog_sdk_settings">Configuración</string>
+    <string name="dialog_sdk_skip">Omitir</string>
+
+    <string name="message_double_back_press">¡Presiona una vez más para salir!</string>
+
+    <!-- Dashboard -->
+    <string name="dashboard_trip_record_mode">Modo de Registro de Viajes</string>
+    <string name="dashboard_statistics">Estadísticas</string>
+    <string name="dashboard_last_scored_trip">Último viaje puntuado</string>
+    <string name="dashboard_eco_scoring">Puntuación Ecológica</string>
+    <string name="dashboard_annual_driving">Resumen Anual de Conducción</string>
+    <string name="dashboard_driving_strakes">Marcas de Conducción</string>
+    <string name="dashboard_learn_more">Aprender más</string>
+    <string name="dashboard_leaderboard">Tabla de Clasificación</string>
+    <string name="dashboard_view_full_leaderboard">Ver tabla completa</string>
+    <string name="dashboard_score_trend">Tendencia de Puntuación en 14 Días</string>
+
+    <string name="dashboard_attention">¡Conduce más para desbloquear tus estadísticas de conducción!</string>
+
+    <string name="dashboard_always_on">Siempre Activado</string>
+    <string name="dashboard_shift_mode">Modo Turno</string>
+    <string name="dashboard_sign_on">Iniciar sesión</string>
+    <string name="dashboard_sign_off">Cerrar sesión</string>
+    <string name="dashboard_on_demand">Bajo Demanda</string>
+    <string name="dashboard_start">Iniciar</string>
+    <string name="dashboard_stop">Detener</string>
+    <string name="dashboard_disabled">Desactivado</string>
+
+    <string name="dashboard_always_on_des">Todos los viajes son registrados</string>
+    <string name="dashboard_shift_mode_des">Los viajes se registran durante tu jornada laboral después de iniciar sesión</string>
+    <string name="dashboard_on_demand_des">Un viaje se registra cuando lo inicias manualmente</string>
+
+    <string name="dashboard_trip_record_mode_success">¡El modo de grabación de viajes ha cambiado con éxito!</string>
+    <string name="dashboard_trip_record_mode_failure">Algo salió mal. Por favor, inténtalo de nuevo.</string>
+
+    <string name="dashboard_safe_driving_score">Puntuación de Conducción Segura</string>
+
+    <string name="dashboard_high_risk_driving">0–55: Conducción de Alto Riesgo</string>
+    <string name="dashboard_high_risk_driving_explanation">– Intervención Inmediata Necesaria: Este rango indica un alto nivel de comportamiento agresivo al volante que requiere acciones correctivas inmediatas, como reentrenamiento del conductor u otras intervenciones.</string>
+    <string name="dashboard_aggressive_driving">55–70: Conducción Agresiva</string>
+    <string name="dashboard_aggressive_driving_explanation">- Mejora Supervisada Requerida: Los conductores en este rango muestran tendencias agresivas. Se recomienda monitoreo activo y programas supervisados de mejora de conducción para aumentar la seguridad.</string>
+    <string name="dashboard_moderate_driving">70–85: Conducción Moderada</string>
+    <string name="dashboard_moderate_driving_explanation">- Monitoreo Regular Recomendado: Esta categoría representa habilidades de conducción moderadas. Aunque no son agresivas, se recomienda monitoreo para fomentar hábitos más seguros.</string>
+    <string name="dashboard_safe_driving">85–100: Conducción Segura</string>
+    <string name="dashboard_safe_driving_explanation">- Mantener Estándares: Este es el rango ideal, indicando un comportamiento seguro y responsable. Los conductores en esta categoría deben ser alentados a mantener estos altos estándares.</string>
+
+    <string name="dashboard_rank">Posición</string>
+
+    <string name="dashboard_dialog_re_auth_title">Se requiere reautenticación</string>
+    <string name="dashboard_dialog_re_auth_des">Por tu seguridad, vuelve a ingresar tu contraseña para continuar.</string>
+    <string name="dashboard_dialog_re_auth_logged">Conectado como:</string>
+    <string name="dashboard_dialog_re_auth_hint">Ingresa tu contraseña</string>
+    <string name="dashboard_dialog_re_auth_error">Contraseña inválida</string>
+    <string name="dashboard_dialog_re_auth_reset_password">Restablecer contraseña</string>
+    <string name="dashboard_dialog_confirm_btn">Confirmar</string>
+    <string name="dashboard_dialog_log_out_btn">Cerrar sesión</string>
+
+    <string name="dashboard_dialog_update_title">Actualización requerida</string>
+    <string name="dashboard_dialog_update_des">Por favor, actualiza la aplicación para continuar usándola</string>
+    <string name="dashboard_dialog_update_btn">Actualizar</string>
+
+    <string name="dashboard_trips">Total de Viajes</string>
+    <string name="dashboard_mileage">Kilometraje</string>
+    <string name="dashboard_hours">Horas</string>
+
+    <string name="dashboard_no_Speeding">Sin Exceso de Velocidad</string>
+    <string name="dashboard_safe_maneuvers">Maniobras Seguras</string>
+    <string name="dashboard_position">Estás en %1$d</string>
+    <string name="dashboard_position_percent">%1$d%% mejor que otros conductores en la carretera</string>
+
+    <string name="dashboard_permissions_granted">¡Todos los permisos concedidos!</string>
+
+    <string name="back_to_profile">Volver a Mi Perfil</string>
+    <string name="success_title">¡Genial!</string>
+    <string name="failure_title">¡Vaya!</string>
+
+    <string name="dialog_button_cancel">Cancelar</string>
+    <string name="dialog_button_ok">Aceptar</string>
+
+    <string name="logbook_title">Libro de Registro del Conductor</string>
+
+    <string name="logbook_date_format_standard">Estándar</string>
+    <string name="logbook_date_format_iso">ISO</string>
+    <string name="logbook_date_format_us">EE.UU.</string>
+    <string name="logbook_date_format_eu">UE</string>
+
+    <string name="logbook_units_metric">Métrico</string>
+    <string name="logbook_units_imperial">Imperial</string>
+
+    <string name="logbook_type_of_report_detailed">Detallado</string>
+    <string name="logbook_type_of_report_daily_summary">Resumen Diario</string>
+
+    <string name="logbook_email">Correo electrónico</string>
+    <string name="logbook_from">Desde</string>
+    <string name="logbook_to">Hasta</string>
+    <string name="logbook_start_date">Fecha de inicio</string>
+    <string name="logbook_end_date">Fecha de fin</string>
+    <string name="logbook_units">Unidades</string>
+    <string name="logbook_date_format">Formato de fecha</string>
+    <string name="logbook_report_type">Tipo de informe</string>
+
+    <string name="logbook_submit">Enviar</string>
+    <string name="logbook_error_email">Correo electrónico inválido</string>
+    <string name="logbook_empty_email">Correo electrónico es obligatorio</string>
+    <string name="logbook_empty_start_date">La fecha de inicio es obligatoria</string>
+    <string name="logbook_empty_end_date">La fecha de fin es obligatoria</string>
+    <string name="logbook_error_date">La fecha de fin no puede ser anterior a la fecha de inicio</string>
+    <string name="logbook_success">La generación del libro de registro ha comenzado. Recibirás un correo cuando esté listo.</string>
+
+    <string name="profile_details_choose_photo_title">Elegir foto</string>
+    <string name="profile_details_take_photo_title">Tomar foto</string>
+    <string name="profile_details_cancel_button">Cancelar</string>
+    <string name="next_button">Siguiente</string>
+    <string name="close_button">Cerrar</string>
+
+    <string name="edit_profile_title">Editar Perfil</string>
+    <string name="account_profile_driver_information">Información del Conductor</string>
+
+    <string name="account_add_profile">Agregar Perfil</string>
+
+    <string-array name="onboarding_titles">
+        <item>Bienvenido a ZenRoad</item>
+        <item>Código abierto y\nListo para usar</item>
+        <item>Transmite tus datos\ndetelemetría con Damoov</item>
+        <item>Prepárate para entrar\nen la pista telemática</item>
+    </string-array>
+    <string-array name="onboarding_subtitles">
+        <item>Estás a punto de lanzar nuestra app demo ZenRoad que usa el SDK telemático de Damoov.</item>
+        <item>ZenRoad es código abierto y disponible para personalización sin costo. Esto significa que puedes lanzar tu app similar a ZenRoad casi al instante.</item>
+        <item>Damoov servirá como fuente de datos para enviar tu información telemática como quieras. Envíala a servicios externos, trabaja con datos en bruto o crea una integración backend.</item>
+        <item>@string/onboarding_p4_text</item>
+    </string-array>
+    <string name="onboarding_p4_text">ZenRoad es solo una parte de la plataforma Damoov. Regístrate en <a href="http://damoov.com/">damoov.com</a> y descubre todos los servicios: interfaz web, SDK, APIs, extensiones y mucho más.</string>
+
+
+</resources>

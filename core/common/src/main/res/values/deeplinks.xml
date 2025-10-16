@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="deep_link_splash_fragment" translatable="false">telematics://zenroad.app/splash_fragment</string>
+    <string name="deep_link_onboarding_fragment" translatable="false">telematics://zenroad.app/onboarding_fragment</string>
+    <string name="deep_link_login_fragment" translatable="false">telematics://zenroad.app/login_fragment</string>
+    <string name="deep_link_main_fragment" translatable="false">telematics://zenroad.app/main_fragment?navigationTarget={navigationTarget}</string>
+    <string name="deep_link_settings_fragment" translatable="false">telematics://zenroad.app/settings_fragment</string>
+
+</resources>

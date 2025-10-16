@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="wizard_telematics_location_desc">Como siguiente paso, recibirás una ventana emergente para conceder permisos de acceso a la <b>ubicación</b>.\n\n
+        La aplicación usa tus datos de ubicación para registrar automáticamente tus viajes en segundo plano, determinar cuándo has iniciado y terminado tu viaje, y para medir tu puntuación.\n\n
+        La aplicación no funcionará sin este permiso.\n\n
+        En la siguiente ventana emergente, por favor selecciona <b>Permitir todo el tiempo</b>.
+    </string>
+
+    <string name="wizard_telematics_attention_dialog_storage_after">para acceder a fotos, medios y archivos en tu dispositivo?</string>
+    <string name="wizard_telematics_attention_dialog_location_after">para acceder a la ubicación de este dispositivo?</string>
+    <string name="wizard_telematics_attention_dialog_activity_recognition_after">para acceder a tu actividad física?</string>
+
+</resources>

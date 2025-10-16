@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    tools:parentTag="android.widget.FrameLayout">
+
+    <EditText
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/custom_text_input_background"
+        android:gravity="center_vertical|start"
+        android:inputType="text"
+        android:maxLines="1"
+        android:paddingStart="20dp"
+        android:paddingEnd="44dp"
+        android:textColor="@color/text_color_black"
+        android:textColorHighlight="@color/color_light_gray"
+        android:textColorHint="@color/color_gray"
+        android:textCursorDrawable="@drawable/custom_text_input_layout_cursor_color"
+        android:textSize="14dp"
+        tools:ignore="Autofill,LabelFor,SpUsage" />
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_gravity="center_vertical|end"
+        android:layout_marginEnd="15dp"
+        android:padding="5dp"
+        android:src="@drawable/ic_edit_text"
+        android:visibility="visible"
+        app:tint="@color/color_light_gray"
+        tools:ignore="ContentDescription" />
+</merge>

@@ -1,0 +1,150 @@
+<resources>
+
+    <string name="app_name" translatable="false">YOUR_LABEL</string>
+
+    <string name="gps_permissions_notification_title">Tracking</string>
+
+    <string name="tracking_notification_title">Tracking</string>
+    <string name="tracking_notification_is_work">Your trip is being scored.</string>
+    <string name="tracking_notification_is_not_work">Trip not in progress.</string>
+    <string name="tracking_notification_tracking_disabled">Tracking disabled.</string>
+    <string name="tracking_notification_bluetooth_disabled">We detected that Bluetooth is switched off. It should be enabled for tracking to work.</string>
+    <string name="tracking_notification_wifi_disabled">We detected that Wi-Fi is switched off. It should be enabled for tracking to work.</string>
+    <string name="tracking_notification_gps_disabled">GPS disabled. Click the notification to enable GPS and grant permissions.</string>
+
+    <string name="tracking_notification_location_disabled">Location disabled. Click the notification and grant permissions.</string>
+    <string name="tracking_notification_background_location_disabled">Background Location disabled. Click the notification and grant permissions.</string>
+    <string name="tracking_notification_activity_recognition_disabled">Activity Recognition disabled. Click the notification and grant permissions.</string>
+
+    <string name="tracking_notification_wifi_gps_disabled">We has no GPS signal &amp; Wi-Fi is switched off. Please enable Wi-Fi and enable Location access in Settings.</string>
+    <string name="tracking_notification_channel_id">Notification channel id</string>
+    <string name="tracking_notification_channel_name">Notification channel name</string>
+    <string name="tracking_notification_power_saving_enabled">Your trips may not be recorded when battery saving mode is enabled</string>
+    <string name="tracking_notification_looking_for_tracks_upload">Waiting for the tracks uploading</string>
+
+    <string name="battery_optimization_alert_title">Battery optimizing</string>
+    <string name="battery_optimization_alert_message">Please, allow this application to avoid system battery optimization for better performance</string>
+
+    <string name="dialog_telematics_location">Grant Location Permissions</string>
+    <string name="dialog_telematics_location_background">Grant Background location</string>
+    <string name="dialog_telematics_battery">Enable Background Tracking</string>
+    <string name="dialog_telematics_activity_recognition">Enable Activity Recognition</string>
+    <string name="dialog_telematics_gps">Enable GPS sensor</string>
+    <string name="dialog_telematics_wifi">Enable Wi-Fi</string>
+    <string name="dialog_telematics_bluetooth">Enable Bluetooth</string>
+    <string name="dialog_telematics_mobile_data">Enable Mobile Data</string>
+    <string name="dialog_telematics_data_turn_on">Turn On Telematics Data</string>
+    <string name="dialog_telematics_data_desc">To collect accurate data and complete app operation, you need to resolve access to the following functions:</string>
+    <string name="dialog_telematics_notifications">Enable Notifications</string>
+    <string name="dialog_telematics_notification_channel">Enable Notification channel</string>
+
+    <string name="dialog_telematics_permission_denied">Permission denied</string>
+    <string name="dialog_telematics_notification_channel_disabled">Notification channel disabled</string>
+    <string name="dialog_telematics_settings">Settings</string>
+    <string name="dialog_telematics_not_now">Not Now</string>
+    <!--<string name="dialog_telematics_instructions_permission">You have previously declined this permission. You must approve this permission in \"Permissions\" in the App settings on your device.</string>-->
+    <string name="dialog_telematics_instructions_permission">You haven’t granted this important permission. In order to score your trips all permission requests must be accepted. Please go to App settings to approve this permission.</string>
+    <string name="dialog_telematics_instructions_notification_channel">You disabled important notification channel \"Tracker service\". In order to score your trips this channel must be enabled. Please go to App settings to enable this channel.</string>
+
+    <string name="wizard_telematics_attention">Attention Required!</string>
+
+    <!-- Wizard storage section -->
+    <string name="wizard_telematics_storage_desc">Then, you will receive a popup to grant rights to temporary store trips data in your <b>phone storage</b>.\n\n
+        Please, choose <b>Allow</b> for application to temporary store trip data.
+    </string>
+    <string name="wizard_telematics_attention_dialog_storage_before">Allow</string>
+    <string name="wizard_telematics_attention_dialog_storage_after">to\naccess photos, media,\nand files on your\ndevice?</string>
+
+    <string name="wizard_telematics_location_desc">As the next step, you will receive a popup to grant rights to access to <b>location</b>.\n\n
+        The app uses your location data to automatically record your trips in background, determine when you have started and ended your trip and to measure your score.\n\n
+        The app will not work without this permission.\n\n
+        On the next popup, please select <b>Allow</b>.
+    </string>
+
+    <string name="wizard_telematics_background_location_desc">
+        As the next step, you should grant rights to access to <b>location in background.</b>\n\n
+        The app uses your location data to automatically record your trips in background, determine when you have started and ended your trip and to measure your score.\n\n
+        The app will not work without this permission.\n\n
+        You should navigate to app settings and choose "<b>Allow all the time</b> on the Location permission screen.</string>
+
+    <!-- Android 11 only -->
+    <string name="wizard_telematics_location_additional_description"><small>This app may want to access your location all the time, even when you\'re not using the app. <font color="#a7c7f9"><u>Allow in settings.</u></font></small></string>
+
+    <string name="wizard_telematics_attention_dialog_location_before">Allow</string>
+    <string name="wizard_telematics_attention_dialog_location_after">to\naccess this device\'s location?</string>
+
+    <string name="wizard_telematics_attention_dialog_background_location_before">Change location access for </string>
+    <string name="wizard_telematics_attention_dialog_background_location_after">\?</string>
+
+    <string name="wizard_telematics_location_additional_keep">Keep \'While using the app\'</string>
+
+
+    <!-- Wizard activity recognition section -->
+    <string name="wizard_telematics_activity_recognition_desc">Then, you will receive a popup to grant access to your <b>physical activity</b>. \nWe need this information to create a driving score.\n\n
+        Please, choose <b>Allow</b> for application to grant access to physical activity.
+    </string>
+    <string name="wizard_telematics_attention_dialog_activity_recognition_before">Allow</string>
+    <string name="wizard_telematics_attention_dialog_activity_recognition_after">to\naccess your physical activity?</string>
+
+    <!-- Wizard gps services section -->
+    <string name="wizard_telematics_gps_google_desc">You will receive a popup shortly to turn on <b>device location</b>, which uses Google\'s location service.\n\n
+        For the app to work properly choose <b>OK</b>
+    </string>
+    <string name="wizard_telematics_attention_dialog_gps_google">For a better experience, turn on device location, which uses Google\'s location service.</string>
+    <string name="dialog_telematics_attention_dialog_gps_google_ok">OK</string>
+    <string name="dialog_telematics_attention_dialog_gps_google_no">No, thanks</string>
+
+    <!-- Wizard background/battery section -->
+    <string name="wizard_telematics_ignore_system_battery_optimization_desc">You will receive a popup shortly to ignore <b>battery optimizations</b>.\n\n
+        For the app to work properly choose <b>ALLOW</b>
+    </string>
+    <string name="wizard_telematics_attention_dialog_battery"><small><b>Let app always run in background?</b>\n\nAllowing application to always run in the\nbackground may reduce battery life.\n\nYou can change this later from\nSettings > Apps &amp; notifications.</small></string>
+    <string name="dialog_telematics_attention_dialog_battery_ok">ALLOW</string>
+    <string name="dialog_telematics_attention_dialog_battery_no">DENY</string>
+
+    <!-- Wizard manufacturers power management section -->
+    <string name="wizard_telematics_extra_power_management_desc">By press "Proceed" you will be forwarded to settings to setup <b>power management</b>.\n
+    For the app to work properly <b>DISABLE</b> power management.
+    </string>
+
+    <!-- Wizard mi autostart section -->
+    <string name="wizard_telematics_extra_autostart_desc">By press "Proceed" you will be forwarded to settings to setup <b>AUTOSTART</b>.\n
+    For the app to work properly <b>ENABLE</b> autostart</string>
+
+    <!-- Wizard mi notifications section -->
+    <string name="wizard_telematics_extra_notifications_desc">By press "Proceed" you will be forwarded to settings to setup <b>notifications</b>.\n
+    For the app to work properly <b>ENABLE</b> all notification.</string>
+
+    <string name="wizard_telematics_show_request">Proceed</string>
+    <string name="wizard_telematics_deny">Deny</string>
+    <string name="wizard_telematics_do_not_allow">Don\'t allow</string>
+    <string name="wizard_telematics_allow">Allow</string>
+    <string name="wizard_telematics_allow_all_time">Allow all the time</string>
+    <string name="wizard_telematics_allow_while_using">Allow only while using the app</string>
+    <string name="wizard_telematics_step" formatted="false">STEP %1s of %2s</string>
+    <string name="wizard_telematics_please_grant">Please, grant all required permissions</string>
+
+    <!-- Android 11 -->
+    <string name="wizard_telematics_while_using_11">While using the app</string>
+    <string name="wizard_telematics_only_this_time">Only this time</string>
+    <string name="wizard_telematics_ask_every_time">Ask every time</string>
+
+    <!--Synchronization-->
+    <string name="sync_notification_body">data is being synchronized…</string>
+
+    <string name="change_to_precise_location">Change to precise location</string>
+
+    <string name="wizard_telematics_location_desc_precise">As the next step, you’ll see a popup to grant app access to <b>location services</b>.\n\n
+        The app uses your location data to automatically record your trips in background, determine when you have started and ended your trip and to measure your score.\n\n
+        The app will not work without this permission.\n\n
+        On the next popup, please select <b>Change to precise location</b>.
+    </string>
+
+    <string name="wizard_telematics_bluetooth_desc">As the next step, you will receive a popup to grant rights to access to <b>Bluetooth</b>.\n\n
+        On the next popup, please select <b>Allow</b>.
+    </string>
+
+    <string name="wizard_telematics_attention_dialog_bluetooth_before">Allow</string>
+    <string name="wizard_telematics_attention_dialog_bluetooth_after">to find, connect to, and determine the relative position of nearby devices?</string>
+
+</resources>

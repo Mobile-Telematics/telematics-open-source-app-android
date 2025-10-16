@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ic_behavior_popup"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/open_sans_bold_700"
+        android:gravity="center"
+        android:paddingHorizontal="16dp"
+        android:text="@string/dashboard_trip_record_mode"
+        android:textAllCaps="false"
+        android:textColor="@color/design_black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/tripBottomSheetEnd"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp"
+        android:fillViewport="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header">
+
+        <RadioGroup
+            android:id="@+id/tripTypeRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <RadioButton
+                android:id="@+id/always_on"
+                style="@style/TripRecordMode"
+                android:layout_marginTop="8dp"
+                android:paddingVertical="8dp"
+                android:text="@string/dashboard_always_on"
+                tools:fontFamily="@font/open_sans_semibold_600" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:fontFamily="@font/open_sans_regular_400"
+                android:text="@string/dashboard_always_on_des"
+                android:textAllCaps="false"
+                android:textColor="@color/design_dark_grey"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/shift_mode"
+                style="@style/TripRecordMode"
+                android:layout_marginTop="8dp"
+                android:paddingVertical="8dp"
+                android:text="@string/dashboard_shift_mode"
+                tools:fontFamily="@font/open_sans_semibold_600" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:fontFamily="@font/open_sans_regular_400"
+                android:text="@string/dashboard_shift_mode_des"
+                android:textAllCaps="false"
+                android:textColor="@color/design_dark_grey"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/on_demand"
+                style="@style/TripRecordMode"
+                android:layout_marginTop="8dp"
+                android:paddingVertical="8dp"
+                android:text="@string/dashboard_on_demand"
+                tools:fontFamily="@font/open_sans_semibold_600" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:fontFamily="@font/open_sans_regular_400"
+                android:text="@string/dashboard_on_demand_des"
+                android:textAllCaps="false"
+                android:textColor="@color/design_dark_grey"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/disabled"
+                style="@style/TripRecordMode"
+                android:layout_marginTop="8dp"
+                android:paddingVertical="8dp"
+                android:text="@string/dashboard_disabled"
+                tools:fontFamily="@font/open_sans_semibold_600" />
+
+
+        </RadioGroup>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/ok_btn"
+        style="@style/Button.Filled"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:enabled="false"
+        android:text="@string/dialog_button_ok"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tripBottomSheetEnd" />
+
+    <Button
+        android:id="@+id/cancel_btn"
+        style="@style/Button.Outlined"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/dialog_button_cancel"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ok_btn" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/trip_details_dialog_margin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cancel_btn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

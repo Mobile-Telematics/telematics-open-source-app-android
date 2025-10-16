@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/splash_nav_graph"
+    app:startDestination="@id/splash_fragment">
+
+    <fragment
+        android:id="@+id/splash_fragment"
+        android:name="com.telematics.features.splash.SplashFragment"
+        android:label="splash_fragment"
+        tools:layout="@layout/fragment_splash">
+
+        <deepLink app:uri="@string/deep_link_splash_fragment" />
+    </fragment>
+</navigation>

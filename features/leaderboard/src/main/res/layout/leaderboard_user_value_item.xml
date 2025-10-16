@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:background="@drawable/progress_card_background"
+    tools:layout_height="@dimen/leaderboard_user_item_normal_size"
+    tools:layout_width="match_parent"
+    tools:parentTag="androidx.constraintlayout.widget.ConstraintLayout">
+
+    <ImageView
+        android:id="@+id/propertyIcon"
+        android:layout_width="@dimen/acc_wizard_document_icon_width"
+        android:layout_height="@dimen/acc_wizard_document_icon_width"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/ic_leaderboard_acceleration" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="1"
+        android:progressTint="@color/colorDefButton"
+        android:thumbTint="@color/colorDefButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/propertyPlace"
+        app:layout_constraintStart_toEndOf="@+id/propertyIcon"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.75" />
+
+
+    <TextView
+        android:id="@+id/propertyHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="3dp"
+        android:textColor="@color/colorDasBoardCoinsTextColor"
+        android:textSize="@dimen/leaderboard_user_item_type_text_normal"
+        app:layout_constraintBottom_toTopOf="@+id/seekBar"
+        app:layout_constraintStart_toEndOf="@+id/propertyIcon"
+        app:layout_constraintStart_toStartOf="@+id/seekBar"
+        tools:text="Phone Usage" />
+
+    <TextView
+        android:id="@+id/propertyPlace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/open_sans_bold_700"
+        android:textColor="@color/colorDasBoardCoinsTextColor"
+        android:textSize="@dimen/leaderboard_user_item_place_text_normal"
+        app:layout_constraintBottom_toTopOf="@+id/seekBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/propertyHeader"
+        tools:text="#77" />
+
+    <View
+        android:id="@+id/topView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="1dp" />
+
+</merge>

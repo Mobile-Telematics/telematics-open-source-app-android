@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_black"
+    android:fitsSystemWindows="true"
+    android:keepScreenOn="true">
+
+    <androidx.media3.ui.PlayerView
+        android:id="@+id/video_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        app:controller_layout_id="@layout/exo_playback_control_view"
+        app:hide_on_touch="true"
+        app:show_timeout="3000"
+        app:use_controller="true" />
+
+    <ImageView
+        android:id="@+id/video_close"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="top|end"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:foreground="@drawable/video_control_ripple_effect"
+        android:padding="8dp"
+        android:src="@drawable/ic_cross_video"
+        app:tint="@color/design_white"
+        tools:ignore="ContentDescription,UnusedAttribute" />
+
+</FrameLayout>

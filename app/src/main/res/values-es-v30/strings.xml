@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+ <string name="wizard_telematics_location_desc">Como siguiente paso, verás una ventana emergente para conceder acceso a los <b>servicios de ubicación</b>.\n\n
+     La aplicación usa tus datos de ubicación para registrar automáticamente tus viajes en segundo plano, determinar cuándo has comenzado y terminado tu viaje, y para medir tu puntuación.\n\n
+     La aplicación no funcionará sin este permiso.\n\n
+     En la siguiente ventana emergente, por favor selecciona <b>Mientras usas la aplicación</b>.
+</string>
+
+</resources>

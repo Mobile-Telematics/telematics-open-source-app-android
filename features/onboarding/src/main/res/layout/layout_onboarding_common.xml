@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="20dp"
+        android:background="#F7FCFF"
+        app:layout_constraintBottom_toBottomOf="@id/onboarding_image_layout"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/onboarding_image_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/onboarding_page_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/onboarding_page_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="ContentDescription"
+            tools:src="@drawable/onboarding_p1" />
+
+        <ImageView
+            android:id="@+id/onboarding_page_image_logo"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:src="@drawable/onboarding_p4_logo"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/onboarding_page_image"
+            app:layout_constraintEnd_toEndOf="@id/onboarding_page_image"
+            app:layout_constraintStart_toStartOf="@id/onboarding_page_image"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.3"
+            tools:ignore="ContentDescription" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/onboarding_page_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="80dp"
+        android:fontFamily="@font/open_sans_bold_700"
+        android:textColor="#0C3754"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@id/onboarding_page_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/onboarding_image_layout"
+        tools:text="Title" />
+
+    <ImageView
+        android:id="@+id/onboarding_page_logo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/onboarding_p1_logo"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@id/onboarding_page_subtitle"
+        app:layout_constraintStart_toStartOf="@id/onboarding_page_title"
+        app:layout_constraintTop_toBottomOf="@id/onboarding_page_title"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/onboarding_page_subtitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:textColor="#666666"
+        android:textColorLink="#3385ED"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/onboarding_bottom_space"
+        app:layout_constraintEnd_toEndOf="@id/onboarding_page_title"
+        app:layout_constraintStart_toStartOf="@id/onboarding_page_title"
+        app:layout_constraintTop_toBottomOf="@id/onboarding_page_logo"
+        tools:text="Subtitle" />
+
+    <Space
+        android:id="@+id/onboarding_bottom_space"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent="0.08"
+        app:layout_constraintTop_toBottomOf="@id/onboarding_page_subtitle" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

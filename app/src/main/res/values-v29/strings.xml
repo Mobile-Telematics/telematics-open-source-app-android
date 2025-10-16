@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="wizard_telematics_location_desc">As the next step, you will receive a popup to grant rights to access to <b>location</b>.\n\n
+        The app uses your location data to automatically record your trips in background, determine when you have started and ended your trip and to measure your score.\n\n
+        The app will not work without this permission.\n\n
+        On the next popup, please select <b>Allow all the time</b>.
+    </string>
+
+    <string name="wizard_telematics_attention_dialog_storage_after">to access photos, media, and files on your device?</string>
+    <string name="wizard_telematics_attention_dialog_location_after">to access this device\'s location?</string>
+    <string name="wizard_telematics_attention_dialog_activity_recognition_after">to access your physical activity?</string>
+</resources>

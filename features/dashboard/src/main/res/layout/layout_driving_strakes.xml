@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:background="@drawable/bg_card"
+    tools:paddingHorizontal="16dp"
+    tools:paddingVertical="24dp"
+    tools:parentTag="androidx.constraintlayout.widget.ConstraintLayout">
+
+    <ImageView
+        android:id="@+id/speed_img"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/ic_speed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/design_grey"
+        tools:ignore="ContentDescription"
+        tools:tint="@color/design_grey" />
+
+    <TextView
+        android:id="@+id/speed_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginStart="8dp"
+        android:ellipsize="end"
+        android:fontFamily="@font/open_sans_regular_400"
+        android:gravity="start|center_vertical"
+        android:maxLines="1"
+        android:text="@string/dashboard_no_Speeding"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/speed_img"
+        app:layout_constraintStart_toEndOf="@+id/speed_img"
+        app:layout_constraintTop_toTopOf="@+id/speed_img" />
+
+    <TextView
+        android:id="@+id/speed_value"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="24dp"
+        android:ellipsize="end"
+        android:fontFamily="@font/open_sans_semibold_600"
+        android:gravity="end|center_vertical"
+        android:maxLines="1"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/speed_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/speed_title"
+        app:layout_constraintTop_toTopOf="@+id/speed_img"
+        tools:text="17 Trips" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/design_grey_stroke"
+        app:layout_constraintTop_toBottomOf="@+id/speed_img" />
+
+    <ImageView
+        android:id="@+id/safe_maneuvers_img"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/ic_corner"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider"
+        app:tint="@color/design_grey"
+        tools:ignore="ContentDescription"
+        tools:tint="@color/design_grey" />
+
+    <TextView
+        android:id="@+id/safe_maneuvers_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginStart="8dp"
+        android:ellipsize="end"
+        android:fontFamily="@font/open_sans_regular_400"
+        android:gravity="start|center_vertical"
+        android:maxLines="1"
+        android:text="@string/dashboard_safe_maneuvers"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/safe_maneuvers_img"
+        app:layout_constraintStart_toEndOf="@+id/safe_maneuvers_img"
+        app:layout_constraintTop_toTopOf="@+id/safe_maneuvers_img" />
+
+    <TextView
+        android:id="@+id/safe_maneuvers_value"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="24dp"
+        android:ellipsize="end"
+        android:fontFamily="@font/open_sans_semibold_600"
+        android:gravity="end|center_vertical"
+        android:maxLines="1"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/safe_maneuvers_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/safe_maneuverstitle"
+        app:layout_constraintTop_toTopOf="@+id/safe_maneuvers_img"
+        tools:text="21 Trips" />
+
+</merge>

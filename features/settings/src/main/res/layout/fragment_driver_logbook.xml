@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:background="@color/design_light_black_90">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:navigationIcon="@drawable/ic_back"
+            app:title="@string/logbook_title"
+            app:titleTextAppearance="@style/app_toolbar"
+            app:titleTextColor="@color/design_white"
+            tools:theme="@style/AppTheme" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/neutral_white"
+            android:paddingBottom="24dp">
+
+            <!-- Menu items -->
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/settingsMenuContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/email_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans_semibold_600"
+                    android:text="@string/logbook_email"
+                    android:textColor="@color/color_black"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/bg_ripple_drop_down"
+                    android:fontFamily="@font/open_sans_regular_400"
+                    android:gravity="start"
+                    android:hint="@string/logbook_email"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:padding="12dp"
+                    android:textColor="@color/design_black"
+                    android:textSize="14sp"
+                    android:visibility="visible"
+                    tools:ignore="LabelFor,TextFields" />
+
+                <TextView
+                    android:id="@+id/from_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="@font/open_sans_semibold_600"
+                    android:text="@string/logbook_from"
+                    android:textColor="@color/color_black"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/from_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/bg_ripple_drop_down"
+                    android:drawableEnd="@drawable/ic_arrow_down_24"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:fontFamily="@font/open_sans_regular_400"
+                    android:gravity="start"
+                    android:hint="@string/logbook_start_date"
+                    android:maxLines="1"
+                    android:padding="12dp"
+                    android:textColor="@color/design_black"
+                    android:textSize="14sp"
+                    android:visibility="visible"
+                    tools:ignore="LabelFor,TextFields" />
+
+
+                <TextView
+                    android:id="@+id/to_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="@font/open_sans_semibold_600"
+                    android:text="@string/logbook_to"
+                    android:textColor="@color/color_black"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/to_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/bg_ripple_drop_down"
+                    android:drawableEnd="@drawable/ic_arrow_down_24"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:fontFamily="@font/open_sans_regular_400"
+                    android:gravity="start"
+                    android:hint="@string/logbook_end_date"
+                    android:maxLines="1"
+                    android:padding="12dp"
+                    android:textColor="@color/design_black"
+                    android:textSize="14sp"
+                    android:visibility="visible"
+                    tools:ignore="LabelFor,TextFields" />
+
+                <TextView
+                    android:id="@+id/units_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="@font/open_sans_semibold_600"
+                    android:text="@string/logbook_units"
+                    android:textColor="@color/color_black"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/units"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/bg_ripple_drop_down"
+                    android:drawableEnd="@drawable/ic_arrow_down_24"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:fontFamily="@font/open_sans_regular_400"
+                    android:gravity="start"
+                    android:hint="@string/logbook_units"
+                    android:maxLines="1"
+                    android:padding="12dp"
+                    android:textColor="@color/design_black"
+                    android:textSize="14sp"
+                    android:visibility="visible"
+                    tools:ignore="LabelFor,TextFields" />
+
+                <TextView
+                    android:id="@+id/date_format_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="@font/open_sans_semibold_600"
+                    android:text="@string/logbook_date_format"
+                    android:textColor="@color/color_black"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/date_format"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/bg_ripple_drop_down"
+                    android:drawableEnd="@drawable/ic_arrow_down_24"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:fontFamily="@font/open_sans_regular_400"
+                    android:gravity="start"
+                    android:hint="@string/logbook_date_format"
+                    android:maxLines="1"
+                    android:padding="12dp"
+                    android:textColor="@color/design_black"
+                    android:textSize="14sp"
+                    android:visibility="visible"
+                    tools:ignore="LabelFor,TextFields" />
+
+                <TextView
+                    android:id="@+id/report_type_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="@font/open_sans_semibold_600"
+                    android:text="@string/logbook_report_type"
+                    android:textColor="@color/color_black"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/report_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/bg_ripple_drop_down"
+                    android:drawableEnd="@drawable/ic_arrow_down_24"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:fontFamily="@font/open_sans_regular_400"
+                    android:gravity="start"
+                    android:hint="@string/logbook_report_type"
+                    android:maxLines="1"
+                    android:padding="12dp"
+                    android:textColor="@color/design_black"
+                    android:textSize="14sp"
+                    android:visibility="visible"
+                    tools:ignore="LabelFor,TextFields" />
+
+                <Button
+                    android:id="@+id/submit"
+                    style="@style/Button.Filled"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="32dp"
+                    android:text="@string/logbook_submit" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </ScrollView>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <com.telematics.core.common.view.ProgressIndicator
+        android:id="@+id/progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+</FrameLayout>

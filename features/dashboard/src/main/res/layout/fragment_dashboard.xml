@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/content_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/design_dark_white"
+        android:paddingHorizontal="20dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/trip_record_mode_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dashboard_margin_top_regular"
+                android:fontFamily="@font/open_sans_semibold_600"
+                android:text="@string/dashboard_trip_record_mode"
+                android:textAllCaps="true"
+                android:textColor="@color/design_dark_grey"
+                android:textSize="16sp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:visibility="visible" />
+
+            <com.telematics.features.dashboard.view.TripRecordModeCardLayout
+                android:id="@+id/trip_record_mode"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dashboard_margin_top_short"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/trip_record_mode_title"
+                tools:visibility="visible" />
+
+            <com.telematics.features.dashboard.view.AttentionCardLayout
+                android:id="@+id/attention_card"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dashboard_margin_top_regular"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/trip_record_mode" />
+
+            <TextView
+                android:id="@+id/statistics_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dashboard_margin_top_regular"
+                android:fontFamily="@font/open_sans_semibold_600"
+                android:text="@string/dashboard_statistics"
+                android:textAllCaps="true"
+                android:textColor="@color/design_dark_grey"
+                android:textSize="16sp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/attention_card"
+                tools:visibility="visible" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/statistics_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dashboard_margin_top_short"
+                android:background="@drawable/bg_card"
+                android:paddingTop="0dp"
+                android:paddingBottom="24dp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/statistics_title"
+                tools:visibility="visible">
+
+                <FrameLayout
+                    android:id="@+id/chips"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="16dp"
+                    android:paddingBottom="@dimen/dashboard_margin_top_short"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:id="@+id/coins_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/bg_chips"
+                        android:orientation="horizontal"
+                        android:paddingVertical="10dp"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="16dp"
+                        android:visibility="gone"
+                        tools:visibility="visible">
+
+                        <ImageView
+                            android:id="@+id/coins_image"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_drive_coin"
+                            tools:ignore="ContentDescription" />
+
+                        <TextView
+                            android:id="@+id/coins_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="4dp"
+                            android:fontFamily="@font/open_sans_semibold_600"
+                            android:includeFontPadding="false"
+                            android:textColor="@color/design_light_black"
+                            android:textSize="16sp"
+                            tools:text="1234" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:id="@+id/rank_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/bg_chips"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="16dp"
+                        android:paddingVertical="10dp"
+                        android:visibility="gone"
+                        tools:visibility="visible">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="4dp"
+                            android:fontFamily="@font/open_sans_semibold_600"
+                            android:text="@string/dashboard_rank"
+                            android:textColor="@color/design_light_black"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/rank_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="4dp"
+                            android:fontFamily="@font/open_sans_semibold_600"
+                            android:textColor="@color/design_blue"
+                            android:textSize="16sp"
+                            tools:text="#73" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                </FrameLayout>
+
+
+                <ImageView
+                    android:id="@+id/statistics_left_button"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="end|bottom"
+                    android:layout_marginBottom="4dp"
+                    android:background="@drawable/oval_button_white_ripple_effect"
+                    android:clickable="true"
+                    android:elevation="4dp"
+                    android:focusable="true"
+                    android:padding="6dp"
+                    android:src="@drawable/ic_arrow_left_16"
+                    app:layout_constraintBottom_toBottomOf="@+id/driving_scores_pager"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline_left"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:ignore="ContentDescription" />
+
+                <androidx.viewpager2.widget.ViewPager2
+                    android:id="@+id/driving_scores_pager"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_constraintDimensionRatio="2:1.06"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline_right"
+                    app:layout_constraintStart_toEndOf="@+id/guideline_left"
+                    app:layout_constraintTop_toBottomOf="@+id/chips"></androidx.viewpager2.widget.ViewPager2>
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.2" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.8" />
+
+                <ImageView
+                    android:id="@+id/statistics_right_button"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="end|bottom"
+                    android:layout_marginBottom="4dp"
+                    android:background="@drawable/oval_button_white_ripple_effect"
+                    android:clickable="true"
+                    android:elevation="8dp"
+                    android:focusable="true"
+                    android:padding="6dp"
+                    android:rotation="180"
+                    android:src="@drawable/ic_arrow_left_16"
+                    app:layout_constraintBottom_toBottomOf="@+id/driving_scores_pager"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/guideline_right"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/statistic_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:fontFamily="@font/open_sans_semibold_600"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:textAllCaps="false"
+                    android:textColor="@color/design_black"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/driving_scores_pager"
+                    tools:text="Excellent Score" />
+
+                <ImageView
+                    android:id="@+id/statistic_mark"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginBottom="8dp"
+                    android:padding="4dp"
+                    android:src="@drawable/ic_mark"
+                    app:layout_constraintBottom_toBottomOf="@+id/statistic_name"
+                    app:layout_constraintStart_toEndOf="@+id/statistic_name"
+                    app:layout_constraintTop_toTopOf="@+id/statistic_name"
+                    tools:ignore="ContentDescription" />
+
+                <com.tbuonomo.viewpagerdotsindicator.WormDotsIndicator
+                    android:id="@+id/rate_dot_indicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    app:dotsColor="@color/design_blue"
+                    app:dotsCornerRadius="8dp"
+                    app:dotsSize="8dp"
+                    app:dotsSpacing="8dp"
+                    app:dotsStrokeColor="@color/design_blue"
+                    app:dotsStrokeWidth="1dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/statistic_name" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/video_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dashboard_margin_top_regular"
+                android:ellipsize="end"
+                android:fontFamily="@font/open_sans_semibold_600"
+                android:maxLines="1"
+                android:textAllCaps="true"
+                android:textColor="@color/design_dark_grey"
+                android:textSize="16sp"
+                android:visibility="gone"
+                app:autoSizeMaxTextSize="16sp"
+                app:autoSizeMinTextSize="12sp"
+                app:autoSizeStepGranularity="1sp"
+                app:autoSizeTextType="uniform"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/statistics_card"
+                tools:text="your weekly focus: acceleration"
+                tools:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/video_preview_image"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/dashboard_margin_top_short"
+                android:background="@drawable/bg_card"
+                android:visibility="gone"
+                app:layout_constraintDimensionRatio="16:9"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/video_title"
+                tools:ignore="ContentDescription"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/score_trend_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dashboard_margin_top_regular"
+                android:ellipsize="end"
+                android:fontFamily="@font/open_sans_semibold_600"
+                android:maxLines="1"
+                android:text="@string/dashboard_score_trend"
+                android:textAllCaps="true"
+                android:textColor="@color/design_dark_grey"
+                android:textSize="16sp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/video_preview_image"
+                tools:visibility="visible" />
+
+            <com.telematics.features.dashboard.view.ScoreTrendLayout
+                android:id="@+id/score_trend"
+                android:layout_width="0dp"
+                android:layout_height="164dp"
+                android:layout_marginTop="@dimen/dashboard_margin_top_short"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/score_trend_title"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/annual_driving_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dashboard_margin_top_regular"
+                android:ellipsize="end"
+                android:fontFamily="@font/open_sans_semibold_600"
+                android:maxLines="1"
+                android:text="@string/dashboard_annual_driving"
+                android:textAllCaps="true"
+                android:textColor="@color/design_dark_grey"
+                android:textSize="16sp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/score_trend"
+                tools:visibility="visible" />
+
+            <com.telematics.features.dashboard.view.AnnualDrivingLayout
+                android:id="@+id/annual_driving"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dashboard_margin_top_short"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/annual_driving_title"
+                tools:visibility="visible" />
+
+            <com.telematics.features.dashboard.view.PermissionsLayout
+                android:id="@+id/permissions_card"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/screen_margin_vertical_long"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/annual_driving"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/eco_scoring_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dashboard_margin_top_regular"
+                android:ellipsize="end"
+                android:fontFamily="@font/open_sans_semibold_600"
+                android:maxLines="1"
+                android:text="@string/dashboard_eco_scoring"
+                android:textAllCaps="true"
+                android:textColor="@color/design_dark_grey"
+                android:textSize="16sp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/permissions_card"
+                tools:visibility="visible" />
+
+            <com.telematics.features.dashboard.view.EcoScoringLayout
+                android:id="@+id/eco_scoring"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dashboard_margin_top_short"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/eco_scoring_title" />
+
+
+            <TextView
+                android:id="@+id/scored_trip_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dashboard_margin_top_regular"
+                android:ellipsize="end"
+                android:fontFamily="@font/open_sans_semibold_600"
+                android:maxLines="1"
+                android:text="@string/dashboard_last_scored_trip"
+                android:textAllCaps="true"
+                android:textColor="@color/design_dark_grey"
+                android:textSize="16sp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/eco_scoring"
+                tools:visibility="visible" />
+
+            <com.telematics.features.dashboard.view.ScoredTripLayout
+                android:id="@+id/scored_trip"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dashboard_margin_top_short"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/scored_trip_title"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/strakes_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dashboard_margin_top_regular"
+                android:ellipsize="end"
+                android:fontFamily="@font/open_sans_semibold_600"
+                android:gravity="start"
+                android:maxLines="1"
+                android:text="@string/dashboard_driving_strakes"
+                android:textAllCaps="true"
+                android:textColor="@color/design_dark_grey"
+                android:textSize="16sp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toStartOf="@+id/strakes_more"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/scored_trip"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/strakes_more"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dashboard_margin_top_regular"
+                android:ellipsize="end"
+                android:fontFamily="@font/open_sans_semibold_600"
+                android:gravity="end"
+                android:maxLines="1"
+                android:text="@string/dashboard_learn_more"
+                android:textAllCaps="false"
+                android:textColor="@color/design_blue"
+                android:textSize="16sp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/strakes_title"
+                app:layout_constraintTop_toBottomOf="@+id/scored_trip"
+                tools:visibility="visible" />
+
+            <com.telematics.features.dashboard.view.DrivingStrakesLayout
+                android:id="@+id/strakes"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dashboard_margin_top_short"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/strakes_title"
+                tools:visibility="visible" />
+
+
+            <TextView
+                android:id="@+id/leaders_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dashboard_margin_top_regular"
+                android:ellipsize="end"
+                android:fontFamily="@font/open_sans_semibold_600"
+                android:gravity="start"
+                android:maxLines="1"
+                android:text="@string/dashboard_leaderboard"
+                android:textAllCaps="true"
+                android:textColor="@color/design_dark_grey"
+                android:textSize="16sp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toStartOf="@+id/leaders_more"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/strakes"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/leaders_more"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dashboard_margin_top_regular"
+                android:ellipsize="end"
+                android:fontFamily="@font/open_sans_semibold_600"
+                android:gravity="end"
+                android:maxLines="1"
+                android:text="@string/dashboard_view_full_leaderboard"
+                android:textAllCaps="false"
+                android:textColor="@color/design_blue"
+                android:textSize="16sp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/leaders_title"
+                app:layout_constraintTop_toBottomOf="@+id/strakes"
+                tools:visibility="visible" />
+
+            <com.telematics.features.dashboard.view.LeadersLayout
+                android:id="@+id/leaders"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dashboard_margin_top_short"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/leaders_title"
+                tools:visibility="visible" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/leaders" />
+
+            <androidx.constraintlayout.widget.Group
+                android:id="@+id/group_video_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:constraint_referenced_ids="video_title, video_preview_image" />
+
+          <!--  <androidx.constraintlayout.widget.Group
+                android:id="@+id/group_simple_mode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:constraint_referenced_ids="statistics_title, statistics_card, score_trend_title, score_trend, eco_scoring_title, eco_scoring, scored_trip_title, scored_trip, strakes_title, strakes_more, strakes, leaders_title, leaders_more, leaders" />
+-->
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <com.telematics.core.common.view.ProgressIndicator
+        android:id="@+id/progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+</androidx.appcompat.widget.LinearLayoutCompat>
