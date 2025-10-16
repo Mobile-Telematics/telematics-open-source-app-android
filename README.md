@@ -271,6 +271,4 @@ here: https://docs.telematicssdk.com/docs/methods-for-android-app
 
 [Official ZenRoad app for Android](https://play.google.com/store/apps/details?id=com.telematicssdk.zenroad&hl=en&gl=US)
 
-[Official ZenRoad app for Huawei](https://appgallery.huawei.com/#/app/C104163115)
-
 ###### Copyright © 2020-2025 DAMOOV PTE.LTD. All rights reserved.
